@@ -13,6 +13,10 @@ import { SharedService } from './shared.service';
 
 import{HttpClientModule}from '@angular/common/http';
 import { FormsModule,ReactiveFormsModule } from '@angular/forms';
+import { HeaderComponent } from './header/header.component';
+import { FooterComponent } from './footer/footer.component';
+import { HomeComponent } from './home/home.component';
+import { LoginComponent } from './login/login.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +26,11 @@ import { FormsModule,ReactiveFormsModule } from '@angular/forms';
     AddEditCoachComponent,
     StudentComponent,
     ShowStudentComponent,
-    AddEditStudentComponent
+    AddEditStudentComponent,
+    HeaderComponent,
+    FooterComponent,
+    HomeComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,

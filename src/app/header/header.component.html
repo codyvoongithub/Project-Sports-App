@@ -1,0 +1,36 @@
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary" *ngIf="authenticationService.isAuthenticated">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Project Sports App</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarColor01">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item">
+            <button routerLink="Home" class="btn btn-primary" Button>Home</button>
+          </li>
+  
+          <li class="nav-item">
+            <button routerLink="coach" class="btn btn-primary" Button>Coach</button>
+          </li>
+          
+          <li class="nav-item">
+            <button routerLink="student" class="btn btn-primary" Button>Student</button>
+          </li>
+        
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-sm-2" type="search" placeholder="Search">
+          <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
+        </form>
+        <ul class="nav-item ml-auto">
+          <li class="nav-item pointer">
+            <button (click)="logout()" class="nav-link" class="btn btn-primary">Logout</button>
+          </li>
+          
+        </ul>
+
+      </div>
+    </div>
+  </nav>
