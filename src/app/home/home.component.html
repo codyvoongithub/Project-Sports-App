@@ -5,5 +5,44 @@
        <h4 class="card-title">Home Page</h4>
         <p class="card-text">Desire to improve yourself as an athele?</p>
         <p class="card-text">Look No Further, All you Need is Right Here</p>
+
+        <div class="row">
+          <div class="column" style="background-color:#aaa;">
+            <p>There is a wide selection of sports to choose from.</p>
+          </div>
+          <div class="column"style="background-color:#bbb;">
+            <p>There is bball</p>
+          </div>
+        </div>
+        
+        <div class="w3-content w3-display-container">
+          <div class="hero-image" style="width:100%"></div>
+          <div class="hero-image1"></div>
+          <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+          <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+        </div>
+        
+        <script>
+        var slideIndex = 1;
+        showDivs(slideIndex);
+        
+        function plusDivs(n) {
+          showDivs(slideIndex += n);
+        }
+        
+        function showDivs(n) {
+          var i;
+          var x = document.getElementsByClassName("mySlides");
+          if (n > x.length) {slideIndex = 1}
+          if (n < 1) {slideIndex = x.length}
+          for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";  
+          }
+          x[slideIndex-1].style.display = "block";  
+        }
+        </script>
+
       </div>
     </div>
+    
+    
