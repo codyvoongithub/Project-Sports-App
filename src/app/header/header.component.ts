@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { AuthenticationService } from '../service/authentication/authentication.service';
+
 
 @Component({
   selector: 'app-header',
@@ -8,11 +8,8 @@ import { AuthenticationService } from '../service/authentication/authentication.
 })
 export class HeaderComponent {
 
- constructor(public authenticationService:AuthenticationService){
+ constructor(){
 
  }
 
- logout(){
-  this.authenticationService.logout();
- }
 }

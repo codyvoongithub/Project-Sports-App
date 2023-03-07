@@ -1,35 +1,124 @@
 
-.hero-image {
-    background: url(src\assets\images\Homepageimg.jpg) no-repeat center; 
-    background-size:contain;
-    height: 500px;
-    
-  }
-  .hero-image1 {
-    background: url(src\assets\images\basketball.jpg) no-repeat center; 
-    background-size:contain;
-    height: 500px;
-    
-  }
-  .hero-text {
-    text-align: center;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    text-size-adjust: 10;
-  }
-  .column {
-    float: left;
-    width: 50%;
-    padding: 10px;
-  }
 
-  .row:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
 
-  .mySlides {display:none;}
+.bg-img{
+  background-image: url(/assets/images/volleyhome.jpg);
+  background-size: cover;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left:0;
+  z-index: -1;
+}
+
+.bgPosition{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top:0;
+  left:0;
+  background-color: black;
+  opacity: 0;
+
+}
+
+.bg{
+  opacity: 1 !important;
+  transition:1s all ease ;
+  animation-duration: 4s;
+  animation-name: example;
+}
+@keyframes example 
+{
+  0%{opacity: 0.1 !important;}
+  10%{opacity: 0.2 !important;}
+  20%{opacity: 0.3 !important;}
+  30%{opacity: 0.4 !important;}
+  40%{opacity: 0.5 !important;}
+  50%{opacity: 0.6 !important;}
+  60%{opacity: 0.7 !important;}
+  70%{opacity: 0.8 !important;}
+  80%{opacity: 0.9 !important;}
+  90%{opacity: 0.99 !important;}
+  100%{opacity: 1.0 !important;}
+}
+
+.banner{
+  padding:80px 0 70 px;
+
+}
+
+.banner-content h1{
+  font-size: 85px;
+  font-weight: 600;
+  color: transparent;
+  -webkit-text-stroke-width: 1px ;
+  -webkit-text-stroke-color:white;
+}
+
+.banner-content p{
+  color: white;
+  font-size: 16px;
+  line-height: 24px;
+  opacity: .7;
+  margin-top: 15px;
+  width: 400px;
+}
+
+.banner-content ul{
+  padding: 0;
+  margin: 40px 0 0;
+}
+
+.banner-content ul li{
+  display: inline-block;
+  width: 140px;
+}
+ 
+.banner-content ul li h2{
+  margin-bottom: .5rem;
+  font-weight: 700;
+  line-height: 1.1px;
+  font-size: 14px;
+  color: white;
+  text-transform: uppercase;
+}
+.banner-content ul li p{
+  font-size: 15px;
+  opacity: .6;
+  font-weight: 600;
+
+}
+
+.gallery{
+  background: black;
+}
+.gallery-container{
+  padding:100px 0;
+  border-top: 1px solid black;
+}
+
+.gallery-container img{
+  width: 100%;
+}
+ 
+header{
+  padding: 80px 0;
+}
+
+.headerFixed{
+  background-color: black;
+  border-bottom: 1px solid black;
+  padding: 20px 0;
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+}
+
+.logo{
+  width: 100px;
+}
+.logo img{
+  width: 100%;
+}

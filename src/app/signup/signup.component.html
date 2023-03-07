@@ -1,0 +1,50 @@
+<div class="outer">
+    <div class="container">
+        <div class="row">
+            <div class="offset-md-2 col-lg-5 col-md-7 offset-lg-4 offset-md-3">
+                <div class="panel border bg-white">
+                    <div class="panel-heading">
+                        <div class="pt-3 font-weight-bold">Sign Up</div>
+                        <div class="panel-body p-3"></div>
+                        <form [formGroup]="signupForm">
+                          <div class="form-group">
+                            <label for="exampleInputEmail1" class="form-label mt-4">Email address</label>
+                            <input type="text" class="form-control" formControlName="email" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                          </div>
+                          <small *ngIf="signupForm.controls['email'].dirty && signupForm.hasError('required','email')"class="text-danger">Email is required</small>
+
+                          <div class="form-group">
+                            <label class="form-label mt-4">Name</label>
+                            <input type="text" class="form-control"formControlName="firstName"   placeholder="FirstName">
+                          </div>
+                          <small *ngIf="signupForm.controls['firstName'].dirty && signupForm.hasError('required','firstName')"class="text-danger">First Name is required</small>
+                          <div class="form-group">
+                            <input type="text" class="form-control" formControlName="lastName"   placeholder="LastName">
+                          </div>
+                          <small *ngIf="signupForm.controls['lastName'].dirty && signupForm.hasError('required','lastName')"class="text-danger">Last Name is required</small>
+                          <div class="form-group">
+                            <label class="form-label mt-4">UserName</label>
+                            <input type="text" class="form-control" formControlName="userName"  placeholder="DisplayName">
+                            <small id="emailHelp" class="form-text text-muted">Please choose an appropriate name.</small>
+                          </div>
+                          <small *ngIf="signupForm.controls['userName'].dirty && signupForm.hasError('required','userName')"class="text-danger">UserName is required</small>
+                          <div class="form-group">
+                            <label for="exampleInputPassword1" class="form-label mt-4">Password</label>
+                            <input type="password" class="form-control" formControlName="password" id="exampleInputPassword1" placeholder="Password">
+                          </div>
+                          <small *ngIf="signupForm.controls['password'].dirty && signupForm.hasError('required','password')"class="text-danger">Password is required</small>
+                          <p></p>
+                          <button type="submit" class="btn btn-outline-secondary" (click)="onSignUp()">Sign Up</button>
+
+                          <div class="text-center pt-3 text-muted">If you already own an account?<a id="forget" routerLink="/login">Login</a></div>
+                          
+                        </form>
+
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

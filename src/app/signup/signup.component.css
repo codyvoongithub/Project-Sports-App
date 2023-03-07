@@ -1,6 +1,6 @@
 .outer{
     height: 100vh;
-    background: linear-gradient(to top, rgba(192, 191, 191, 0.936) 50%, #534f4f 90% )no-repeat;
+    background: linear-gradient(to top, white 10%, #6e6e6e 90% )no-repeat;
 }
 .panel-heading{
     text-align: center;
@@ -41,7 +41,8 @@ a:hover{
     display: flex;
     align-items: center;
     cursor: pointer;
-    border:1px solid rgb(15, 14, 14);
+    border:1px solid white;
+    color: aqua;
 
 }
 .input-field.error{
@@ -76,6 +77,10 @@ img{
     top:-13px;
     left: 33%;
     background-color: white ;
-    padding: 0;
+    padding: 0 8px;
     
+}
+
+.form-group{
+    border-color: black;
 }

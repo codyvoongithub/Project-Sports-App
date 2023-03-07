@@ -1,28 +1,43 @@
-<div class="login-wrapper">
-  <div class="card">
-    <div class="card-body">
-      <form  class="form-signin" (ngSubmit)="onSubmit(signInForm)" #signInForm="ngForm">
+<div class="outer">
+    <div class="container">
+        <div class="row">
+            <div class="offset-md-2 col-lg-5 col-md-7 offset-lg-4 offset-md-3">
+                <div class="panel border bg-white">
+                    <div class="panel-heading">
+                        <div class="pt-3 font-weight-bold">Login</div>
+                        <div class="panel-body p-3"></div>
+                        <form [formGroup]="loginForm">
+                          <div class="form-group">
+                            <label for="exampleInputEmail1" class="form-label mt-4">Email address</label>
+                            <input type="text" class="form-control"formControlName="username" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                          </div>
+                          <small *ngIf="loginForm.controls['username'].dirty && loginForm.hasError('required','username')" class="text-danger">"Username is required</small>
+                          
+                          <div class="form-group">
+                            <label for="exampleInputPassword1" class="form-label mt-4">Password</label>
+                            <input type="password" class="form-control" formControlName="password" id="exampleInputPassword1" placeholder="Password">
+                          </div>
+                          <small *ngIf="loginForm.controls['password'].dirty && loginForm.hasError('required','password')" class="text-danger">"Password is required</small>
+                          <div class="form-inline fr mt-4">
+                            <a id="forget">Forget Password?</a>
+                          </div>
+                          
+                          
+                          <button type="submit" class="btn btn-outline-secondary" (click)="onLogin()">Login</button>
+                          <div class="text-center pt-3 text-muted">Don't have an account?<a id="forget" routerLink="/signup">Sign up</a></div>
+                          
+                        </form>
 
-
-          <h1 class="title">Please Sign In Here</h1>
-          <label for="exampleInputEmail1" class="form-label mt-4">Email address</label>
-          <input type="email" class="form-control" name="email" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email"
-          required autofocus ngModel>
-          <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-        
-        
-          <label for="exampleInputPassword1" class="form-label mt-4">Password</label>
-          <input type="password" class="form-control" name="password" id="exampleInputPassword1" placeholder="Password"
-          required ngModel>
-          <p></p>
-          <button type="submit" class="btn btn-primary">Sign In</button>
-          <p></p>
-          <div class="alert alert-danger" role="alert" *ngIf="isFormInvalid">Please Fill In All Fields</div>
-
-          <div class="alert alert-danger" role="alert" *ngIf="areCredentialsInvalid">Invalid email or password input</div>
-
-      </form>
-
+                    </div>
+                    <div class="mx-3 my-2 py-2 bordert">
+                      <div class="text-center py-3">
+                        <a href="https://www.facebook.com" target="_blank" class="px-2"><img src="https://www.dpreview.com/files/p/articles/4698742202/facebook.jpeg" alt=""></a>
+                        <a href="https://www.google.com" target="_blank" class="px-2"><img src="https://freepnglogos.com/uploads/google-logo-png/google-logo-png-suite-everything-you-need-know-about-google-newest-0.png" alt=""></a>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-  </div>
 </div>

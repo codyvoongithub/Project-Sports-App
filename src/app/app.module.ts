@@ -16,7 +16,14 @@ import { FormsModule,ReactiveFormsModule } from '@angular/forms';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { HomeComponent } from './home/home.component';
+
+
+
+import { SoccerComponent } from './soccer/soccer.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { LoginComponent } from './login/login.component';
+import { SignupComponent } from './signup/signup.component';
+
 
 @NgModule({
   declarations: [
@@ -30,14 +37,19 @@ import { LoginComponent } from './login/login.component';
     HeaderComponent,
     FooterComponent,
     HomeComponent,
-    LoginComponent
+    SoccerComponent,
+    LoginComponent,
+    SignupComponent
+    
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    BrowserAnimationsModule
+    
   ],
   providers: [SharedService],
   bootstrap: [AppComponent]

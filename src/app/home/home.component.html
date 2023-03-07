@@ -1,48 +1,54 @@
 
-  <div class="card text-white bg-dark mb-3" style="text-align: center;">
-      <div class="card-header">Designed for Elite Atheles </div>
-      <div class="card-body">
-       <h4 class="card-title">Home Page</h4>
-        <p class="card-text">Desire to improve yourself as an athele?</p>
-        <p class="card-text">Look No Further, All you Need is Right Here</p>
 
-        <div class="row">
-          <div class="column" style="background-color:#aaa;">
-            <p>There is a wide selection of sports to choose from.</p>
-          </div>
-          <div class="column"style="background-color:#bbb;">
-            <p>There is bball</p>
-          </div>
-        </div>
-        
-        <div class="w3-content w3-display-container">
-          <div class="hero-image" style="width:100%"></div>
-          <div class="hero-image1"></div>
-          <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
-          <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
-        </div>
-        
-        <script>
-        var slideIndex = 1;
-        showDivs(slideIndex);
-        
-        function plusDivs(n) {
-          showDivs(slideIndex += n);
-        }
-        
-        function showDivs(n) {
-          var i;
-          var x = document.getElementsByClassName("mySlides");
-          if (n > x.length) {slideIndex = 1}
-          if (n < 1) {slideIndex = x.length}
-          for (i = 0; i < x.length; i++) {
-            x[i].style.display = "none";  
-          }
-          x[slideIndex-1].style.display = "block";  
-        }
-        </script>
+<div class="bg-img">
+  <div class="bgPosition" [class.bg]="bgVariable">
 
+  </div>
+</div>
+<header [class.headerFixed]="headerVariable">
+  <div class="container">
+    <div class="logo">
+      <img src="assets/images/fire.png">
+    </div>
+  </div>
+</header>
+<section class="banner">
+  <div class="container">
+    <div class=" banner-content">
+      <h1> Welcome</h1>
+      <p>Here is where you can find yourself improving</p>
+      <ul>
+        <li>
+          <h2>Made By</h2>
+          <p>Cody Voon</p>
+        </li>
+        <li>
+          <h2>Role</h2>
+          <p>Personal Project</p>
+        </li>
+        <li>
+          <h2>Supervisor</h2>
+          <p>Łukasz Piątek </p>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="gallery">
+  <div class="container">
+    <div class="gallery-container">
+      <div class="row">
+        <div class="col-md-6">
+          <img src="assets/images/bballshot.jpg">
+          <button routerLink="basketball">basketball</button>
+        </div>
+        <div class="col-md-6">
+          <img src="assets/images/humblesoccer.jpg">
+          <button routerLink="Soccer" class="btn btn-secondary" Button>Soccer</button>
+        </div>
       </div>
     </div>
-    
-    
+  </div>
+</section>
+

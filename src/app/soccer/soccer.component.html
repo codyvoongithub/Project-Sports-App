@@ -1,0 +1,213 @@
+
+<div class="background">
+    <div class="container">
+        <img src="/assets/images/soccerfield.png" style="width:100%;">
+        <div class="centered">This is a soccer field.</div>
+    </div>
+    
+    <div class="card">
+      <div class="card-header">
+        <h1>Welcome to Soccer</h1>
+      </div>
+    </div>
+
+  <div class="row"> 
+
+    <div class="column">
+
+      <div class="card border-primary mb-3" style="max-width: 20rem;">
+        <div class="card-header">Field of Play</div>
+        <div class="card-body">
+          <li>
+          Field Length & Width: Length (touch line) is 90/120 m and width (goal line) is 45/90 m
+          </li>
+          <li>
+          Goal line: At each end of the field is an eight-yard-wide goal centred along the goal line
+          </li>
+          <li>
+          Goal box: Six yards from each goal post along the goal line and 
+          six yards out into the field (perpendicular to the goal line) is the goal box.
+          </li>
+          <li>
+          Penalty box: Extending 18 yards from each goal post along the goal line and 
+          18 yards out into the field (perpendicular to the goal line) is the penalty box.
+          </li>
+          <li>
+          In each of the four corners of the field is a five-foot-high corner flag.
+          </li>
+        </div>
+       </div>
+    </div>
+
+      <div class="column">
+       <div class="card text-white bg-danger mb-3" style="max-width: 20rem;">
+        <div class="card-header">Fouls and midconduct</div>
+        <div class="card-body"> 
+          <p class="card-text">A direct free kick is awarded when a player:</p>
+          <li>
+            Kicks or attempts to kick an opponent
+          </li>
+          <li>
+            Handles the ball deliberately
+          </li>
+          <li>
+            Strikes or attempts to strike an opponent
+          </li>
+          <li>
+            Charges an opponent
+          </li>
+          <p></p>
+          <p class="card-text">Indirect free kicks are awarded if a player:</p>
+          <li>
+            Plays in a dangerous manner
+          </li>
+          <li>
+            Impedes the progress of an opponent
+          </li>
+          <li>
+            Prevents the goalkeeper from releasing the ball from his/her hands
+          </li>
+          <li>
+            Commits any other unmentioned offense
+          </li>
+          <p>If any of these fouls is committed by a player in his/her team’s penalty area, 
+            the opposing team is awarded a penalty kick.</p>
+      
+        </div>
+      </div>
+      </div>
+      <div class="column">
+      <div class="card text-white bg-warning mb-3" style="max-width: 20rem;">
+        <div class="card-header">Card</div>
+        <div class="card-body">
+          <p>Yellow Card: Yellow cards are awarded as a caution or warning to a player and 
+            can be issued for the following offenses:</p>
+            <li>
+              Unsporting behaviour
+            </li>
+            <li>
+              Persistent infringement of the Laws of the Game
+            </li>
+            <li>
+              Failure to respect the required distance when play is restarted with a corner kick, free kick, or throw-in
+            </li>
+            <li>
+              Entering or re-entering the field of play without the referee’s permission
+            </li>
+            <p>Red Card: Red cards are used to send a player off the field, and can be issued for the following offenses: </p>
+            <li>
+              Serious foul play
+            </li>
+            <li>
+              Denying the opposing team a goal 
+              or an obvious goal-scoring opportunity by deliberately handling the ball (the goalkeeper being an exception)
+            </li>
+            <li>
+              Receiving a second caution (yellow card) in the same match
+            </li>
+        </div>
+      </div>
+      </div>
+
+      <div class="column">
+      <div class="card text-white bg-dark mb-3" style="max-width: 20rem;">
+        <div class="card-header">Match Officials</div>
+        <div class="card-body">
+          <p class="card-text">The Referee –The referee is the authority on the field, and his/her word is law. 
+            If a player questions a referee’s decision, he/she can be disciplined further simply for dissent.</p>
+            <p>
+              The Assistant Referees –The assistant referees are primarily responsible for assisting the referee in performing his/her duties – this includes 
+              signalling with a flag when a ball goes of play, when a player is fouled, or when a player is in an offside position.
+            </p>
+        </div>
+      </div>
+      </div>
+    </div>
+
+
+    <ul class="tabs-container">
+      <li  (click)="onTabClick('Shooting')" [class.active]="activeTab == 'Shooting'" class="tab-link">Shooting</li>
+      <li (click)="onTabClick('Dribbling Skills')" [class.active]="activeTab == 'Dribbling Skills'"  class="tab-link">Dribbling Skills</li>
+      <li (click)="onTabClick('Passing and Receiving')" [class.active]="activeTab == 'Passing and Receiving'"  class="tab-link">Passing and Receiving</li>
+      <li (click)="onTabClick('Defending')" [class.active]="activeTab == 'Defending'"  class="tab-link">Defending</li>
+    </ul>
+    <div *ngIf="activeTab == 'Shooting'" class="w-100">
+      
+      <img src="/assets/images/Approach.webp"  style="width:50%;" class="center">
+      <li>Plant your supporting foot beside the ball to gain stability. 
+        Pointing your planted foot in the direction you want the ball to go will help guide your aim.
+      </li>
+
+      <img src="/assets/images/contactpoint.webp"  style="width:50%;" class="center">
+      <li>
+        Hit the ball with the top of your foot, 
+        also known as your laces. As you kick, lock your ankle to create power through your striking foot.
+      </li>
+      <li>
+        After kicking the ball, follow through with your shooting leg in the direction you aimed the ball. 
+        This will enable the shot to have the full power you need to get it into the goal.
+      </li>
+
+      <img src="/assets/images/dribbleshot.webp"  style="width:50%;" class="center">
+      <li>
+        Most of the time in a game, you’ll be dribbling the ball before you take a shot. 
+        Prepare by pushing the ball out in front of you a few feet 
+        so you can take a few steps before planting your foot and shooting.
+      </li>
+      <li>
+        Remember to point your supporting foot in the direction you’re aiming the ball.
+      </li>
+
+    </div>
+    <div *ngIf="activeTab == 'Dribbling Skills'" class="w-100">
+      <img src="/assets/images/ballcontrol.webp"  style="width:50%;" class="center">
+      <li>
+        The inside and outside of your feet are how you control the direction, 
+        turn the ball around and cut around defenders. The top, or laces, of your foot pushes the ball 
+        forward with speed as you’re running with the ball, 
+        and the sole of your foot stops the ball for sharp turns and faking out an opposing player.
+      </li>
+      <li>
+        When dribbling, keep your toes pointed down and your ankle locked. 
+        As you’re running, push off the ground with your supporting foot to gain distance. 
+        Keep an athletic position, landing on the ball of your foot for better speed and agility.
+      </li>
+      <li>
+        Frequently tapping the ball allows you to stay agile, in control, 
+        and keep the ball close to you, enabling you to change direction fast and keep your opponent guessing.
+      </li>
+    </div>
+    <div *ngIf="activeTab == 'Passing and Receiving'" class="w-100">
+      <img src="/assets/images/passing.gif"  style="width:50%;" class="center">
+      <li>
+        To do a standard pass, turn your hip outward, lift your leg to the side, 
+        then pass the ball with the inside of your foot.
+      </li>
+      <img src="/assets/images/loftpass.gif"  style="width:50%;" class="center">
+      <li>
+        To do a lofted pass, put your placefoot out wide horizontally, 
+        kick the bottom of the ball with the area around the knuckle of your big toe, then follow through.
+        When you follow through your leg should be high.
+      </li>
+    </div>
+    <div *ngIf="activeTab == 'Defending'" class="w-100">
+      <img src="/assets/images/tackling.gif"  style="width:50%;" class="center">
+      <li>
+        In general, tackle the attacker when he makes a mistake. 
+        Tackle quickly when he makes a bad touch or touches the ball too closely to you.
+      </li>
+      <img src="/assets/images/offballpositioning.gif"  style="width:50%;" class="center">
+      <li>
+        Where you should position yourself depends on the soccer position you’re playing and the situation. 
+        In general, you’re in a good defensive position when you are in a valuable space on the field.
+      </li>
+     </div>
+  
+
+    
+      
+
+
+</div>
+
+
