@@ -10,7 +10,7 @@ private baseUrl: string ="https://localhost:7191/api/User"
 constructor(private http:HttpClient) { }
 
 sendResetPasswordLink(email: string){
-  return this.http.post<any>(`${this.baseUrl}/send-reset-email/${email}`,{})
+  return this.http.post<any>(`${this.baseUrl}/send-reset-email/${email}`,{});
 }
 
 resetPassword(resetPasswordObj :ResetPassword){
