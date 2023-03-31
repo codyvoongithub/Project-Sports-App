@@ -4,14 +4,12 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CoachComponent } from './coach/coach.component';
-import { ShowCoachComponent } from './coach/show-coach/show-coach.component';
-import { AddEditCoachComponent } from './coach/add-edit-coach/add-edit-coach.component';
-import { StudentComponent } from './student/student.component';
-import { ShowStudentComponent } from './student/show-student/show-student.component';
-import { AddEditStudentComponent } from './student/add-edit-student/add-edit-student.component';
-import { SharedService } from './shared.service';
 
-import{HttpClientModule}from '@angular/common/http';
+import { StudentComponent } from './student/student.component';
+
+
+
+import{HttpClientModule, HTTP_INTERCEPTORS}from '@angular/common/http';
 import { FormsModule,ReactiveFormsModule } from '@angular/forms';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
@@ -23,23 +21,24 @@ import { SoccerComponent } from './soccer/soccer.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { LoginComponent } from './login/login.component';
 import { SignupComponent } from './signup/signup.component';
+import { BasketballComponent } from './basketball/basketball.component';
+import { TokenInterceptor } from './interceptors/token.interceptor';
+import { CommonModule } from '@angular/common';
+
 
 
 @NgModule({
   declarations: [
     AppComponent,
     CoachComponent,
-    ShowCoachComponent,
-    AddEditCoachComponent,
     StudentComponent,
-    ShowStudentComponent,
-    AddEditStudentComponent,
     HeaderComponent,
     FooterComponent,
     HomeComponent,
     SoccerComponent,
     LoginComponent,
-    SignupComponent
+    SignupComponent,
+    BasketballComponent
     
   ],
   imports: [
@@ -48,10 +47,15 @@ import { SignupComponent } from './signup/signup.component';
     HttpClientModule,
     FormsModule,
     ReactiveFormsModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    CommonModule, 
     
   ],
-  providers: [SharedService],
+  providers: [{
+  provide:HTTP_INTERCEPTORS,
+  useClass:TokenInterceptor,
+  multi:true
+  }],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

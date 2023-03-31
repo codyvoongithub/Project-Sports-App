@@ -1,1 +1,8 @@
-<app-show-coach></app-show-coach>
+<ul *ngFor="let user of users">
+    <li>
+        {{user.userName}}
+    </li>
+</ul>
+<div>
+    <h1>Hello, {{fullName}}</h1>
+</div>

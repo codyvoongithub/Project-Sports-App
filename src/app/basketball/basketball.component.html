@@ -1,0 +1,199 @@
+<section class="parallax">
+  
+    <img src="assets/images/Tropical/hill1.png" id="hill1">
+    <img src="assets/images/Tropical/hill2.png" id="hill2">
+    <img src="assets/images/Tropical/hill3.png" id="hill3">
+    <img src="assets/images/Tropical/hill4.png" id="hill4">
+    <img src="assets/images/Tropical/hill5.png" id="hill5">
+    
+    <img src="assets/images/Tropical/tree.png" id="tree">
+    <h2 id="text" >Basketball</h2>
+    <img src="assets/images/Tropical/leaf.png" id="leaf">
+    <img src="assets/images/Tropical/plant.png" id="plant">
+  
+  </section>
+  
+  <section class="sec">
+    <h2>Soccer Rules</h2>
+    <div class="row"> 
+  
+      <div class="column">
+  
+        <div class="card border-primary mb-3" style="max-width: 20rem;">
+          <div class="card-header">Field of Play</div>
+          <div class="card-body">
+            <li>
+               End lines and Side lines: The boundary line, which is made up of the endlines and the sidelines, determines the size of the playing field. These lines are not a part of the playing field.
+              The court's lines are all the same color, 5 cm wide, and ought to be very visible. 
+            </li>
+            <li>
+              The center line extends 0.15 meters past each sideline and is marked parallel to the end lines at the midway of the sidelines.
+            </li>
+            <li>
+              The free-throw line is drawn perpendicular to both end lines. Its longest edge is 3.6 meters in length and 5.8 meters from the inner edge of the end line.
+              On a hypothetical line connecting the center points of the two end lines, the line's midway is located.
+            </li>
+            <li>
+              Except for the area next to the opponent's basket, the 3-point line is not a part of the 3-point goal area, which is the entire playing court.
+            </li>
+          </div>
+         </div>
+      </div>
+  
+        <div class="column">
+         <div class="card text-white bg-danger mb-3" style="max-width: 20rem;">
+          <div class="card-header">Fouls and midconduct</div>
+          <div class="card-body"> 
+            <p class="card-text">Depending on the location on the playing court where the foul was committed, the opponent's team member receives a free throw. </p>
+            <li>
+              Personal fouls are committed whenever there is an unauthorized physical contact, such as hitting, shoving, slapping, holding, or illegal picking. 
+            </li>
+            <li>
+              Charging: When a player pushes or rushes over a defensive player, it is an offensive foul.
+            </li>
+            <li>
+              A flagrant foul is committed when an opponent is violently contacted, such as by being hit, kicked, or punched.
+            </li>
+            <li>
+              A player is judged to have committed an intentional foul if they make physical contact with another player while making no attempt to steal the ball, according to the officials.
+            </li>
+            
+            <li>
+              Technical foul: Rather than including any physical contact between the players, 
+              the technical foul is primarily about the "manners" in which the game is played. 
+              This penalty includes coaches in its description and is typically assessed in cases of 
+              profanity, obscenity, offensive gestures, or even conflict with the referee.
+            </li>
+        
+          </div>
+        </div>
+        </div>
+        <div class="column">
+        <div class="card text-white bg-warning mb-3" style="max-width: 20rem;">
+          <div class="card-header">Scoring System</div>
+          <div class="card-body">
+              <li>
+                Three-point shot: During the course of the game, any basket made from a shot made from outside the three-point line is worth three points.
+              </li>
+              <li>
+                Any basket made during the course of the game from a shot made within the three-point line is worth two points.
+              </li>
+              <li>
+                Free throws: A successful free throw results in one point.
+              </li>
+          </div>
+        </div>
+        </div>
+  
+        <div class="column">
+        <div class="card text-white bg-dark mb-3" style="max-width: 20rem;">
+          <div class="card-header">Violations</div>
+          <div class="card-body">
+           <li>
+            Walking/Traveling: If a player takes a step and a half without dribbling the ball, it is considered to be travelling.
+           </li>
+             <li>
+              Carrying/Palming: When a player dribbles the ball with his or her hand too far to the side of or, occasionally, even under the ball, this is a violation.
+             </li>
+             <li>
+              Double Dribble: When a player dribbles with both hands on the ball at once or picks up the dribble and then begins to dribble again, it is considered a double dribbling violation.
+             </li>
+             <li>
+              Backcourt violation: This happens when the ball crosses the midcourt line once and is then passed back across the line.
+             </li>
+          </div>
+        </div>
+        </div>
+      </div>
+  
+      <ul class="tabs-container">
+        <li  (click)="onTabClick('Dribbling Skills')" [class.active]="activeTab == 'Dribbling Skills'" class="tab-link">Dribbling Skills</li>
+        <li (click)="onTabClick('Shooting')" [class.active]="activeTab == 'Shooting'"  class="tab-link">Shooting</li>
+        <li (click)="onTabClick('Passing and Receiving')" [class.active]="activeTab == 'Passing and Receiving'"  class="tab-link">Passing and Receiving</li>
+        <li (click)="onTabClick('Defending')" [class.active]="activeTab == 'Defending'"  class="tab-link">Defending</li>
+      </ul>
+      <div *ngIf="activeTab == 'Dribbling Skills'" class="w-100">
+        
+        <img src="/assets/images/crossover.gif"  style="width:50%;" class="center">
+        <li  class="word">
+          After you get the defensive player facing in the direction you want them to, quickly power dribble across your body while switching to your other hand.
+          At this precise moment, you should be ready to set up for a jump shot or pass the ball to a teammate.
+        </li>
+  
+        <img src="/assets/images/basketball/btb.jfif"  style="width:50%;" class="center">
+        <li class="word">
+          Behind your back, move. Instead of attempting the difficult and perhaps dangerous maneuver of crossing in between yourself 
+          and the defender to change directions, bounce the ball behind your back. You can outrun defenses by utilizing your body as a ball shield.
+        </li>
+       
+  
+        <img src="/assets/images/basketball/between.jfif"  style="width:50%;" class="center">
+        <li class="word">
+          Between your legs, squiggle. Dribble the ball between your legs to create a second effective shield. Normally, you would dribble back through your non-dominant leg while grabbing the ball with that hand, 
+          but there are a variety of other methods to improvise.
+        </li>
+       <li class="word">
+        Be imaginative. To increase your offensive effectiveness, experiment with various between-the-legs and directional shift combinations. When you have mastered the fundamentals of the crossover, which is essentially simply a short dribble, the only thing stopping your offensive game is your creativity.
+       </li>
+  
+      </div>
+      <div *ngIf="activeTab == 'Shooting'" class="w-100">
+        <img src="/assets/images/basketball/shoulder.jfif"  style="width:50%;" class="center">
+        <li class="word">
+          Maintain a shoulder-width distance or less between your feet, with your legs slightly staggered. You should gently place your shooting foot in front of your non-shooting foot. Your shoulders, hips, and elbows should be aligned with the basket, 
+          and your feet should be turned 10 to 45 degrees to your off-side.
+        </li>
+        <img src="/assets/images/elbow.jfif"  style="width:50%;" class="center">
+        <li class="word">
+          Place your elbow so that it is parallel to your shoulder and not directly beneath the ball. Dip the ball when it is passed to you to your thigh or waist. You don't need to dip if you catch a bounce pass, another low pass, 
+          or are shooting off the dribble because you are already doing so.
+        </li>
+        <img src="/assets/images/basketball/shootbball.jfif"  style="width:50%;" class="center">
+        <li class="word">
+          Let go of the ball. Release the ball with your shooting hand pointed towards the basket as soon as you are about to jump. Instead of the ball travelling in a straight line toward the hoop, push your wrist and straighten your elbow. 
+          Your guiding hand should travel to lightly touch your shooting arm just below the wrist as you release the ball.
+        </li>
+      </div>
+      <div *ngIf="activeTab == 'Passing and Receiving'" class="w-100">
+        <img src="/assets/images/basketball/chestpass.jfif"  style="width:50%;" class="center">
+        <li class="word">
+          Take a firm hold of the ball with your fingertips pointing in the direction of your chin.
+        </li>
+        <img src="/assets/images/basketball/feetposition.jfif"  style="width:50%;" class="center">
+        <li class="word">
+          Using your dominant foot, step forward and launch the ball.
+        </li>
+        <img src="/assets/images/basketball/bouncepass.jfif"  style="width:50%;" class="center">
+        <li class="word">
+          To execute a bounce pass, bounce the ball rather than tossing it into the air.
+        </li>
+      </div>
+      <div *ngIf="activeTab == 'Defending'" class="w-100">
+        <img src="/assets/images/basketball/defend.jfif"  style="width:50%;" class="center">
+        <li class="word">
+          Keep your hands open and in motion as you raise them. Try spreading your hands out to the sides or keeping one hand close to your hip and using the other 
+          to dig for the ball with the other. Avoid letting your hands rest on your sides at all costs.
+        </li>
+        <img src="/assets/images/basketball/pressure.jfif"  style="width:50%;" class="center">
+        <li class="word">
+          Put immediate pressure on the ball-carrying player. Go up to the player holding the ball as soon as you notice they have no one on them to provide pressure. An offensive player with an open passing or dribbling lane poses the most threat to a defense, 
+          and the simplest approach to stop this is to apply pressure as quickly as you can.
+        </li>
+        <img src="/assets/images/basketball/offball.jfif"  style="width:50%;" class="center">
+        <li class="word">
+          Always move around in your position. When you're playing defense, make sure you're never still. Adjust your position when the basketball or your player moves to be ready to respond quickly to any play.
+           Maintain your defensive position and check that you can see the ball and the person you're covering at all times.
+        </li>
+       </div>
+    
+  
+      
+        
+  
+  
+  
+  
+  </section>
+  
+  <script src="UI/angular14/src/assets/script.js"></script>
+  

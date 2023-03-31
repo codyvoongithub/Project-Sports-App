@@ -32,7 +32,7 @@ export class SignupComponent implements OnInit{
      this.auth.signUp(this.signupForm.value)
      .subscribe({
       next:(res =>{
-        alert(res.message)
+        alert(res.message);
         this.signupForm.reset();
         this.router.navigate(['login']);
       }),
@@ -44,7 +44,7 @@ export class SignupComponent implements OnInit{
 
 
 
-      console.log(this.signupForm.value)
+      
     }else{
        ValidateForm.validateAllFormFields(this.signupForm)
     }
