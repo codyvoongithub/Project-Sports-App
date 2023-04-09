@@ -11,6 +11,7 @@ import { SignupComponent } from './signup/signup.component';
 
 import { SoccerComponent } from './soccer/soccer.component';
 import { StudentComponent } from './student/student.component';
+import { ResetComponent } from './reset/reset.component';
 
 
 
@@ -22,7 +23,8 @@ const routes: Routes = [
   {path:'Soccer',component:SoccerComponent},
   {path:'login',component:LoginComponent},
   {path:'signup',component:SignupComponent },
-  {path:'basketball',component:BasketballComponent}
+  {path:'basketball',component:BasketballComponent},
+  {path:'reset',component:ResetComponent}
 ];
 
 @NgModule({
