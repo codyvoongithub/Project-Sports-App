@@ -1,0 +1,200 @@
+<section class="parallax">
+  
+    <img src="assets/images/Tropical/hill1.png" id="hill1">
+    <img src="assets/images/Tropical/hill2.png" id="hill2">
+    <img src="assets/images/Tropical/hill3.png" id="hill3">
+    <img src="assets/images/Tropical/hill4.png" id="hill4">
+    <img src="assets/images/Tropical/hill5.png" id="hill5">
+    
+    <img src="assets/images/Tropical/tree.png" id="tree">
+    <h2 id="text" >VolleyBall</h2>
+    <img src="assets/images/Tropical/leaf.png" id="leaf">
+    <img src="assets/images/Tropical/plant.png" id="plant">
+  
+  </section>
+  
+  <section class="sec">
+    <h2>VolleyBall Rules</h2>
+    <div class="row"> 
+  
+      <div class="column">
+  
+        <div class="card border-primary mb-3" style="max-width: 20rem;">
+          <div class="card-header">Field of Play</div>
+          <div class="card-body">
+            <li>
+                The playing court's boundary line is made up of two side lines and two end lines, both of which are drawn inside the confines of the playing court. The perimeter is 18 meters by 9 meters. The center line separates the playing field into two equal courts, each measuring 9 meters by 9 meters. Both courts are thought to own an equal portion of the line's width.  
+            </li>
+            <li>
+                Front zone: The front zone is the region bounded by the center line's axis and the back of the attack line. The front zone, however, may go all the way to the end of the free zone, past the sidelines.
+            </li>
+            <li>
+                Back zone: The back zone is the region that is bounded by the attack line and end line axes.
+            </li>
+            <li>
+                Behind each of the end lines is a 9-meter wide space known as the service zone. Two small lines, each 15 cm long and drawn 20 cm behind the end line as an extension of the side lines, serve as its lateral boundaries. The service zone goes all the way to the free zone's edge.  
+            </li>
+          </div>
+         </div>
+      </div>
+  
+        <div class="column">
+         <div class="card text-white bg-danger mb-3" style="max-width: 20rem;">
+          <div class="card-header">Fouls and midconduct</div>
+          <div class="card-body"> 
+            <p class="card-text">The following are the several offenses that a volleyball player or team may commit:
+            </p>
+            <li>
+                Ball playing fault:The ball is caught or tossed while being returned, the team hits the ball four times before returning it, or a player hits the ball twice in a row.  
+
+            </li>
+            <li>
+                Serving fault: The ball touches a member of the serving team, fails to entirely cross the vertical plane of the net, or leaves the playing court after being served by the server, all of which constitute service faults.   
+
+            </li>
+            <li>
+                Blocking fault:The blocker is guilty of a blocking violation if the ball is touched in the opponent's space, the back row player takes part in a successful block, the ball is sent off the block, or a libero player makes an effort at a block.
+
+            </li>
+            <li>
+                Attack hit fault:If the ball is struck inside the opponent team's playing area, outside the playing area, or completely higher than the top of the net at the time of the hit, the player is guilty of an attack hit fault.
+
+            </li>
+            <li>
+                Rotational fault: When the service is not provided in accordance with the rotational order, the team commits a rotational fault.
+
+            </li>
+        
+          </div>
+        </div>
+        </div>
+        <div class="column">
+        <div class="card text-white bg-warning mb-3" style="max-width: 20rem;">
+          <div class="card-header">Scoring System</div>
+          <div class="card-body">
+              <li>
+                Most competitions use a rally scoring system, which allows either side to score a point regardless of which team served the previous point. 
+              </li>
+              <li>
+                If there is a margin of at least two points over the opponent's score, each set is played until a team achieves 25 points. The best 3 out of 5 games format is used to decide the majority of games. 
+              </li>
+              <li>
+                If a fifth set is played, the team that scores 15 points first wins, provided that their score is at least two points more than their opponent's score.
+
+              </li>
+          </div>
+        </div>
+        </div>
+  
+        <div class="column">
+        <div class="card text-white bg-dark mb-3" style="max-width: 20rem;">
+          <div class="card-header">The Libero Player</div>
+          <div class="card-body">
+           <li>
+            Each team has the option to sign up one Libero, or specialized defensive player, for the duration of the competition. The following are the main guidelines for a Libero player:
+           </li>
+             <li>
+                The libero must don a shirt that is a different color than the other team members' shirts.
+                
+             </li>
+             <li>
+                When the ball is above the height of the top of the net, he or she is only allowed to play in the back row and has absolutely no right to finish an offensive hit.
+
+             </li>
+             <li>
+                The Libero is not permitted to serve, block, or try to block.
+            </li>
+            <li>
+                No other player is permitted to serve as a libero, and in the event that the originally registered libero becomes injured, the same player will step in under the same predetermined circumstances.
+            </li>
+          </div>
+        </div>
+        </div>
+      </div>
+  
+      <ul class="tabs-container">
+        <li  (click)="onTabClick('Passing')" [class.active]="activeTab == 'Passing'" class="tab-link">Passing</li>
+        <li (click)="onTabClick('Setting')" [class.active]="activeTab == 'Setting'"  class="tab-link">Setting</li>
+        <li (click)="onTabClick('Spiking')" [class.active]="activeTab == 'Spiking'"  class="tab-link">Spiking</li>
+        <li (click)="onTabClick('Blocking')" [class.active]="activeTab == 'Blocking'"  class="tab-link">Blocking</li>
+        <li (click)="onTabClick('Digging')" [class.active]="activeTab == 'Digging'"  class="tab-link">Digging</li>
+
+      </ul>
+      <div *ngIf="activeTab == 'Passing'" class="w-100">
+        
+        
+        <li  class="word">
+            When your team is on offense, the pass, often referred to as the bump or the forearm pass, is a service reception technique used to contact a ball that has entered your court area.
+
+        </li>
+  
+        <img src="/assets/images/Volleyball/vbpassing-thumbs-together-creating-platform-kenny-ANIMATION.gif.pagespeed.ce.oRYhePmJ51.gif"  style="width:50%;" class="center">
+        <li class="word">
+            When the ball that was served by the other team passes the net and lands just above your hip level, you
+            Place the palms of both hands within one another, with the thumbs facing the ground.            
+        </li>
+        <li>
+            By doing this, you create a platform with both of your arms that you can use to make contact with the ball, deflecting it from your angled platform into the air in the direction of your setter, who is primarily in charge of making the second contact on the ball, or if it is the third contact, you send the ball over the net. 
+        </li>
+      </div>
+
+      <div *ngIf="activeTab == 'Setting'" class="w-100">
+        <img src="/ssets/images/Volleyball/xTexaslonghornssettersettothemiddleTexasTechblockerswatchingthesetter.jpg.pagespeed.ic.oZc5s9Auxn.webp"  style="width:50%;" class="center">
+        <li class="word">
+            The setter is the player who sets the ball the most, and the set is typically the second contact in a rally. 
+
+The point guard on a basketball team, who directs the offense and calls the plays, is analogous to the setter on a volleyball team. 
+
+The goal of offensive plays is to confuse the other team's blockers by using a combination of sets that are called to eligible hitters using hand signals. These sets are hit at various heights, speeds, and locations along the net. 
+
+        </li>
+      </div>
+      <div *ngIf="activeTab == 'Spiking'" class="w-100">
+        <img src="/assets/images/Volleyball/xpac12uscvolleyballspikerhittingbyneontommy.jpg.pagespeed.ic.jl_5GMSIgx.web"  style="width:50%;" class="center">  
+          <li class="word">The third contact in a rally that propels the ball powerfully over the net is often referred to as an attack hit or a spike. 
+
+            A player jumps three or four steps off the ground to begin a spike by swinging their arms at the ball as it is in the air. 
+            </li>
+      
+          <li class="word">
+            The first two steps of your spike approach are slow, and the final two steps are large and quick, 
+            lifting you into the air and gaining momentum as you go. 
+            This allows you to jump above the top of the net and make contact with the ball with an armswing that makes contact with the ball at its highest height, allowing you to attack or hit it into the opposing court.  
+        </li>
+        
+
+      </div>
+      <div *ngIf="activeTab == 'Blocking'" class="w-100">
+        <img src="/assets/images/Volleyball/xVolleyballblockingtripleblockRalph_Arvesenphoto.jpg.pagespeed.ic.w_Xiy1LEQN.webp"  style="width:50%;" class="center">
+        <li class="word">
+            The first chance a defense team has to prevent an offensive team from hitting into their court is through a block. 
+
+            Your team is in defense mode and prepared to protect your court whenever the whistle blows and your team serves the ball over the net.
+        </li>
+
+       </div>
+
+       <div *ngIf="activeTab == 'Digging'" class="w-100">
+        <img src="/assets/images/Volleyball/xTexasLonghornsLiberodiggingagainstTexasTech.jpg.pagespeed.ic.6dvw3FylQ-.webp"  style="width:50%;" class="center">
+        <li class="word">
+            A rally ball that has been hit over the net with an attack hit is called a dig when it makes contact for the first time with another ball using an underhand technique.
+
+            Before the ball reaches you, you tuck your hips low to the ground beneath it, and you use your extended arms, clasped at the wrists, to build a platform with your forearms on which to "dig" or deflect the ball upward. 
+            
+            If you are the defender or "digger," it is your responsibility to raise the ball high enough in the air, ideally to the middle of the court around the ten-foot line, to allow for the second contact of the rally.
+            
+        </li>
+       </div>
+    
+  
+      
+        
+  
+  
+  
+  
+  </section>
+  
+  <script src="UI/angular14/src/assets/script.js"></script>
+  
+

@@ -25,6 +25,8 @@ import { BasketballComponent } from './basketball/basketball.component';
 import { TokenInterceptor } from './interceptors/token.interceptor';
 import { CommonModule } from '@angular/common';
 import { ResetComponent } from './reset/reset.component';
+import { BadmintonComponent } from './badminton/badminton.component';
+import { VolleyballComponent } from './volleyball/volleyball.component';
 
 
 
@@ -40,7 +42,9 @@ import { ResetComponent } from './reset/reset.component';
     LoginComponent,
     SignupComponent,
     BasketballComponent,
-    ResetComponent
+    ResetComponent,
+    BadmintonComponent,
+    VolleyballComponent
     
   ],
   imports: [

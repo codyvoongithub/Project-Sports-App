@@ -1,0 +1,217 @@
+<section class="parallax">
+  
+    <img src="assets/images/Tropical/hill1.png" id="hill1">
+    <img src="assets/images/Tropical/hill2.png" id="hill2">
+    <img src="assets/images/Tropical/hill3.png" id="hill3">
+    <img src="assets/images/Tropical/hill4.png" id="hill4">
+    <img src="assets/images/Tropical/hill5.png" id="hill5">
+    
+    <img src="assets/images/Tropical/tree.png" id="tree">
+    <h2 id="text" >Badminton</h2>
+    <img src="assets/images/Tropical/leaf.png" id="leaf">
+    <img src="assets/images/Tropical/plant.png" id="plant">
+  
+  </section>
+  
+  <section class="sec">
+    <h2>Badminton Rules</h2>
+    <div class="row"> 
+  
+      <div class="column">
+  
+        <div class="card border-primary mb-3" style="max-width: 20rem;">
+          <div class="card-header">Field of Play</div>
+          <div class="card-body">
+            <li>
+                Bottom line: The back line is the portion of the court that extends parallel to both ends of the net and has the same width as the court.
+            </li>
+            <li>
+                The center line, which divides the two service boxes, runs perpendicular to the net through the middle of each side. 
+            </li>
+            <li>
+                The space formed by the base line, center line, and singles side line is known as the service box in singles play. 
+                In contrast, the area for a doubles match is defined by the center line, the doubles side line, and the doubles long service line. 
+            </li>
+            <li>
+                The short service line is the nearest line that goes parallel to the net and spans the entire width of the court.
+            </li>
+          </div>
+         </div>
+      </div>
+  
+        <div class="column">
+         <div class="card text-white bg-danger mb-3" style="max-width: 20rem;">
+          <div class="card-header">Fouls and midconduct</div>
+          <div class="card-body"> 
+            <p class="card-text">In badminton, there are five frequent mistakes that players might make. 
+                A foul results in the player losing the rally and giving the opposition a point. The following justifies the flaws:</p>
+            <li>
+                When a player touches the net or any other part of his/her body touches the shuttle during a rally, it is considered a contact foul. 
+            </li>
+            <li>
+                When a player takes the shuttle while it is still in the opponent's side, they commit the over the net mistake. 
+                However, if the racket crosses the net on the follow through, it is not considered a fault. 
+            </li>
+            <li>
+                Service problem: If the player performs a service above his waist (lowest rib bone), this problem will occur. 
+                In addition, the racket must swing upwards to prevent service fault and point downwards when it strikes the shuttle.  
+            </li>
+            <li>
+                Receiver Fault: This error occurs when a player shifts his or her feet from the starting position when taking an opponent's serve. 
+                In other words, a player cannot move until the opposing player has made contact with the shuttle during a serve. 
+            </li>
+            <li>
+                Double Hit: In a doubles match, a double hit occurs when the shuttle is touched by both players' rackets during the rally.
+            </li>
+        
+          </div>
+        </div>
+        </div>
+        <div class="column">
+        <div class="card text-white bg-warning mb-3" style="max-width: 20rem;">
+          <div class="card-header">Scoring System</div>
+          <div class="card-body">
+              <li>
+                The best of three games, each worth 21 points, constitutes a match. 
+                Each time the serve is made during a rally, the side that prevails scores a point. 
+                When the score is tied at 20, the team with the two-point advantage wins, and when the score is tied at 29, 
+                the team with the 30th point wins. 
+                In the following game, the winning team gets the first serving.
+              </li>
+          </div>
+        </div>
+        </div>
+  
+        <div class="column">
+        <div class="card text-white bg-dark mb-3" style="max-width: 20rem;">
+          <div class="card-header">Lets</div>
+          <div class="card-body">
+           <li>
+            Under the following conditions, the umpire or any of the players may call a stop to play:
+           </li>
+             <li>
+                Before the recipient is ready, the server serves
+             </li>
+             <li>
+                The shuttle either passes over the net and gets caught in it after the serve is returned, or it is caught on the net and hangs there.
+             </li>
+             <li>
+                During play, the shuttle degrades and the base fully separates from the rest of the shuttle.
+            </li>
+            <li>
+                According to the umpire's assessment, the play has been interfered with or the player has been distracted by outside activity.
+            </li>
+          </div>
+        </div>
+        </div>
+      </div>
+  
+      <ul class="tabs-container">
+        <li  (click)="onTabClick('Grip')" [class.active]="activeTab == 'Grip'" class="tab-link">Grip</li>
+        <li (click)="onTabClick('Stance')" [class.active]="activeTab == 'Stance'"  class="tab-link">Stance</li>
+        <li (click)="onTabClick('Serve')" [class.active]="activeTab == 'Serve'"  class="tab-link">Serve</li>
+        <li (click)="onTabClick('Smash')" [class.active]="activeTab == 'Smash'"  class="tab-link">Smash</li>
+        <li (click)="onTabClick('Lob or Clear')" [class.active]="activeTab == 'Lob or Clear'"  class="tab-link">Lob or Clear</li>
+
+      </ul>
+      <div *ngIf="activeTab == 'Grip'" class="w-100">
+        
+        
+        <li  class="word">
+          To control shots and reduce the risk of wrist injuries, it is crucial to hold the racket with the proper grip. 
+          You can play both backhand and forehand strokes with ease if you have the right grip.
+          A racket is held in a manner comparable to a handshake. Only the thumb will fit nicely against the handle grip's broader surface. The remaining hand will be used to simulate a handshake. 
+          Don't forget to maintain a loose, welcoming grip during the handshake. It will limit one's range of motion and could eventually result in wrist damage.
+        </li>
+  
+        <img src="/assets/images/badminton/Badminton-Grip-kreedon.jpg.webp"  style="width:50%;" class="center">
+        <ul class="word">
+          The usage of fingers when playing the two types of strokes is the only distinction. 
+          <li>While performing forehand strokes, advance the index finger.</li>
+          <li> Playing backhand strokes requires moving the thumb forward.</li>
+        </ul>
+       
+      </div>
+
+      <div *ngIf="activeTab == 'Stance'" class="w-100">
+        <img src="/assets/images/badminton/Forehand-Smash-KreedOn.jpg.webp"  style="width:50%;" class="center">
+        <ul class="word">
+          Attacking Stance
+          <li>Before playing an overhead forehand stroke, 
+            it is utilized to position oneself. 
+            Turn your torso toward the sidelines while standing in the attacking stance, keeping both legs shoulder-width apart and the racket leg in back. In order to attack the shuttle as it is falling, 
+            elevate both your racket and non-racket arms.</li>
+        </ul>
+        <img src="/assets/images/badminton/Defencive-Stance-Badminton-kreedon.jpg.webp"  style="width:50%;" class="center">
+        <ul class="word">
+          Defensive Stance
+          <li>You must be ready with a defensive stance in order to counter an opponent's smash. Put your racket in front at waist height and slightly angled forward while facing the body toward the net. 
+            You can maintain a comfortable non-racket arm while maintaining greater balance.</li>
+        </ul>
+        <img src="/assets/images/badminton/Net-stance-Badminton-kreedon-630x420.jpg.webp"  style="width:50%;" class="center">
+        <ul class="word">
+          Net Stance
+          <li>To be prepared for the opponent's comeback after playing a net shot, take this position. To execute this shot, step forward with your racket-side foot while maintaining your other foot in the back. 
+            Raise the arm not holding a racket and position it in front of your body at a small height above waist level. To be prepared to leap forward, 
+            shift your body weight slightly forward.</li>
+        </ul>
+
+
+      </div>
+      <div *ngIf="activeTab == 'Serve'" class="w-100">
+        <img src="/assets/images/badminton/Serve-Badminton-Kreedon-e1562313617538.jpg.webp"  style="width:50%;" class="center">
+        <ul class="word">
+          High Serve
+          <li>The opponent's court's rear corner is the target of a high serve. A strong high serve should cause the shuttle to descend sharply at the back of the court. In reality, opponents who are able to execute a powerful smash are given a high serve. A perfectly executed high serve will always be met by a lob or a drop from your opponent.
+            In general, it is advised to serve the shuttle to the backhand area of the opposition. This is done to take advantage of the weaker backhand that most players have.</li>
+        </ul>
+      
+        <ul class="word">
+          Low Serve
+          <li>The front of the court is the low serve's target, as opposed to the high serve. The shuttle should be released so that it lands in the front corner of the court immediately above the net. In this scenario, if the execution is subpar, your adversary has the chance to sprint ahead and smash the shuttle to you.</li>
+        </ul>
+
+      </div>
+      <div *ngIf="activeTab == 'Smash'" class="w-100">
+        <ul class="word">
+          Forehand smash
+          <li>The forehand is an overhead smash that resembles tossing a ball because it is an overhead movement. If you can throw the ball accurately, playing this stroke shouldn't be difficult for you. For beginners in badminton, this ability is a game-changer.</li>
+        </ul>
+        <img src="/assets/images/badminton/Backhand-Smash-Kreedon.jpg.webp"  style="width:50%;" class="center">
+        <ul class="word">
+          Backhand smash
+          <li>Even professional players struggle to execute one of badminton's most difficult strokes. However, it is crucial to practice and improve the technique in order to advance in skill. Getting the backhand grip is crucial for performing this stroke. It's equally crucial to take your position again. 
+            Years of work and consistency are needed to master the backhand smash in badminton.</li>
+        </ul>
+        <img src="/assets/images/badminton/Jump-smash-Kreedon-e1562162292101-688x420.jpg.webp"  style="width:50%;" class="center">
+        <ul class="word">
+          Jumping smash
+          <li>Under jumping smash, a forehand smash with a timed jump added counts. The most glamorous badminton skill is this one.</li>
+        </ul>
+       </div>
+
+       <div *ngIf="activeTab == 'Lob or Clear'" class="w-100">
+        <img src="/assets/images/badminton/Drop-Shot-Kreedon.png.webp"  style="width:50%;" class="center">
+        <ul class="word">
+          Drop Shot
+          <li>The drop shot is the most complicated of all the fundamentals in badminton. Drop shots are delicate badminton strokes that might help you score points by tricking your opponent. These are used to bring the opposition to the frontcourt and are played with both the backhand and the forehand. As a result, you have more room to work with in the backcourt and midcourt. Drop shots can be made quickly or slowly depending on the circumstance. 
+            If properly honed, this fundamental badminton ability can elevate a player from intermediate to expert status. </li>
+        </ul>
+        <img src="/assets/images/badminton/Clear-badminton-kreedon.png.webp"  style="width:50%;" class="center">
+        <li class="word">
+          One way to think about the lob shot in badminton is as a shot with an inverted 'U' trajectory. Typically, it is played from the forecourt with the intention of lifting or "lobbing" the shuttle over the opposition. The goal is to land it at an impossible-to-clear angle as close to the baseline as possible. The quick motion backward when challenging an opponent is comparable to this. The backhand and forehand can both be used to carry it out. The front and midcourt typically become more open as a result, providing several opportunities. One can develop this fundamental badminton ability by practicing alone, without coaching.
+        </li>
+       </div>
+    
+  
+      
+        
+  
+  
+  
+  
+  </section>
+  
+  <script src="UI/angular14/src/assets/script.js"></script>
+  
+
