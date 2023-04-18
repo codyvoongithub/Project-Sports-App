@@ -1,15 +1,15 @@
 <section class="parallax">
   
-    <img src="assets/images/Tropical/hill1.png" id="hill1">
-    <img src="assets/images/Tropical/hill2.png" id="hill2">
-    <img src="assets/images/Tropical/hill3.png" id="hill3">
-    <img src="assets/images/Tropical/hill4.png" id="hill4">
-    <img src="assets/images/Tropical/hill5.png" id="hill5">
-    
-    <img src="assets/images/Tropical/tree.png" id="tree">
-    <h2 id="text" >VolleyBall</h2>
-    <img src="assets/images/Tropical/leaf.png" id="leaf">
-    <img src="assets/images/Tropical/plant.png" id="plant">
+  <img src="assets/images/Tropical/hill1.png" class="background" >
+  <img src="assets/images/Tropical/hill2.png" class="background">
+  <img src="assets/images/Tropical/hill3.png" class="background">
+  <img src="assets/images/Tropical/hill4.png" class="background">
+  <img src="assets/images/Tropical/hill5.png" class="background">
+  
+  <img src="assets/images/Tropical/tree.png" class="background">
+  <h2 id="text" >VolleyBall</h2>
+  <img src="assets/images/Tropical/leaf.png" class="background">
+  <img src="assets/images/Tropical/plant.png" class="background">
   
   </section>
   
@@ -17,7 +17,7 @@
     <h2>VolleyBall Rules</h2>
     <div class="row"> 
   
-      <div class="column">
+      <div class="col-3 col-s-12">
   
         <div class="card border-primary mb-3" style="max-width: 20rem;">
           <div class="card-header">Field of Play</div>
@@ -38,7 +38,7 @@
          </div>
       </div>
   
-        <div class="column">
+        <div class="col-3 col-s-12">
          <div class="card text-white bg-danger mb-3" style="max-width: 20rem;">
           <div class="card-header">Fouls and midconduct</div>
           <div class="card-body"> 
@@ -68,7 +68,7 @@
           </div>
         </div>
         </div>
-        <div class="column">
+        <div class="col-3 col-s-12">
         <div class="card text-white bg-warning mb-3" style="max-width: 20rem;">
           <div class="card-header">Scoring System</div>
           <div class="card-body">
@@ -86,7 +86,7 @@
         </div>
         </div>
   
-        <div class="column">
+        <div class="col-3 col-s-12">
         <div class="card text-white bg-dark mb-3" style="max-width: 20rem;">
           <div class="card-header">The Libero Player</div>
           <div class="card-body">
@@ -121,69 +121,67 @@
 
       </ul>
       <div *ngIf="activeTab == 'Passing'" class="w-100">
-        
-        
-        <li  class="word">
-            When your team is on offense, the pass, often referred to as the bump or the forearm pass, is a service reception technique used to contact a ball that has entered your court area.
-
-        </li>
-  
         <img src="/assets/images/Volleyball/vbpassing-thumbs-together-creating-platform-kenny-ANIMATION.gif.pagespeed.ce.oRYhePmJ51.gif"  style="width:50%;" class="center">
-        <li class="word">
-            When the ball that was served by the other team passes the net and lands just above your hip level, you
-            Place the palms of both hands within one another, with the thumbs facing the ground.            
-        </li>
-        <li>
+        <ul class="word">
+           <li>When the ball that was served by the other team passes the net and lands just above your hip level, you
+            Place the palms of both hands within one another, with the thumbs facing the ground.    
+           </li> 
+            <li>
+              When your team is on offense, the pass, often referred to as the bump or the forearm pass, is a service reception technique used to contact a ball that has entered your court area.
+          </li>  
+          <li>
             By doing this, you create a platform with both of your arms that you can use to make contact with the ball, deflecting it from your angled platform into the air in the direction of your setter, who is primarily in charge of making the second contact on the ball, or if it is the third contact, you send the ball over the net. 
-        </li>
+        </li>      
+        </ul>
       </div>
 
       <div *ngIf="activeTab == 'Setting'" class="w-100">
-        <img src="/ssets/images/Volleyball/xTexaslonghornssettersettothemiddleTexasTechblockerswatchingthesetter.jpg.pagespeed.ic.oZc5s9Auxn.webp"  style="width:50%;" class="center">
-        <li class="word">
+        <img src="/assets/images/Volleyball/xTexaslonghornssettersettothemiddleTexasTechblockerswatchingthesetter.jpg.pagespeed.ic.oZc5s9Auxn.webp"  style="width:50%;" class="center">
+        <ul class="word">
+          Setting the Ball
+          <p></p>
             The setter is the player who sets the ball the most, and the set is typically the second contact in a rally. 
 
 The point guard on a basketball team, who directs the offense and calls the plays, is analogous to the setter on a volleyball team. 
 
 The goal of offensive plays is to confuse the other team's blockers by using a combination of sets that are called to eligible hitters using hand signals. These sets are hit at various heights, speeds, and locations along the net. 
 
-        </li>
+        </ul>
       </div>
       <div *ngIf="activeTab == 'Spiking'" class="w-100">
-        <img src="/assets/images/Volleyball/xpac12uscvolleyballspikerhittingbyneontommy.jpg.pagespeed.ic.jl_5GMSIgx.web"  style="width:50%;" class="center">  
-          <li class="word">The third contact in a rally that propels the ball powerfully over the net is often referred to as an attack hit or a spike. 
-
-            A player jumps three or four steps off the ground to begin a spike by swinging their arms at the ball as it is in the air. 
-            </li>
-      
-          <li class="word">
-            The first two steps of your spike approach are slow, and the final two steps are large and quick, 
-            lifting you into the air and gaining momentum as you go. 
-            This allows you to jump above the top of the net and make contact with the ball with an armswing that makes contact with the ball at its highest height, allowing you to attack or hit it into the opposing court.  
-        </li>
-        
-
+        <img src="/assets/images/Volleyball/xpac12uscvolleyballspikerhittingbyneontommy.jpg.pagespeed.ic.jl_5GMSIgx.webp"  style="width:50%;" class="center">  
+          <ul class="word">
+            <li>The third contact in a rally that propels the ball powerfully over the net is often referred to as an attack hit or a spike. 
+              A player jumps three or four steps off the ground to begin a spike by swinging their arms at the ball as it is in the air. </li>
+            <li>The first two steps of your spike approach are slow, and the final two steps are large and quick, 
+              lifting you into the air and gaining momentum as you go. 
+              This allows you to jump above the top of the net and make contact with the ball with an armswing that makes contact with the ball at its highest height, allowing you to attack or hit it into the opposing court.  </li>
+          </ul>
       </div>
+
       <div *ngIf="activeTab == 'Blocking'" class="w-100">
         <img src="/assets/images/Volleyball/xVolleyballblockingtripleblockRalph_Arvesenphoto.jpg.pagespeed.ic.w_Xiy1LEQN.webp"  style="width:50%;" class="center">
-        <li class="word">
+        <ul class="word">
+          Blocking / Defence
+          <p></p>
             The first chance a defense team has to prevent an offensive team from hitting into their court is through a block. 
 
             Your team is in defense mode and prepared to protect your court whenever the whistle blows and your team serves the ball over the net.
-        </li>
+        </ul>
 
        </div>
 
        <div *ngIf="activeTab == 'Digging'" class="w-100">
         <img src="/assets/images/Volleyball/xTexasLonghornsLiberodiggingagainstTexasTech.jpg.pagespeed.ic.6dvw3FylQ-.webp"  style="width:50%;" class="center">
-        <li class="word">
+        <ul class="word">
+          Digging the ball <p></p>
             A rally ball that has been hit over the net with an attack hit is called a dig when it makes contact for the first time with another ball using an underhand technique.
 
             Before the ball reaches you, you tuck your hips low to the ground beneath it, and you use your extended arms, clasped at the wrists, to build a platform with your forearms on which to "dig" or deflect the ball upward. 
             
             If you are the defender or "digger," it is your responsibility to raise the ball high enough in the air, ideally to the middle of the court around the ten-foot line, to allow for the second contact of the rally.
             
-        </li>
+        </ul>
        </div>
     
   

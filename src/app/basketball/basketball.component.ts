@@ -1,8 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 
-
-
-
 @Component({
   selector: 'app-basketball',
   templateUrl: './basketball.component.html',
@@ -10,7 +7,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BasketballComponent implements OnInit{
   
+
+  
   ngOnInit(): void {
+    
   }
 
   activeTab:string = 'Personal Details';

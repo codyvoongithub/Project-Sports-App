@@ -1,15 +1,15 @@
 <section class="parallax">
   
-  <img src="assets/images/Tropical/hill1.png" id="hill1">
-  <img src="assets/images/Tropical/hill2.png" id="hill2">
-  <img src="assets/images/Tropical/hill3.png" id="hill3">
-  <img src="assets/images/Tropical/hill4.png" id="hill4">
-  <img src="assets/images/Tropical/hill5.png" id="hill5">
-  
-  <img src="assets/images/Tropical/tree.png" id="tree">
-  <h2 id="text" >Soccer</h2>
-  <img src="assets/images/Tropical/leaf.png" id="leaf">
-  <img src="assets/images/Tropical/plant.png" id="plant">
+  <img src="assets/images/Tropical/hill1.png" class="background" >
+    <img src="assets/images/Tropical/hill2.png" class="background">
+    <img src="assets/images/Tropical/hill3.png" class="background">
+    <img src="assets/images/Tropical/hill4.png" class="background">
+    <img src="assets/images/Tropical/hill5.png" class="background">
+    
+    <img src="assets/images/Tropical/tree.png" class="background">
+    <h2 id="text" >Soccer</h2>
+    <img src="assets/images/Tropical/leaf.png" class="background">
+    <img src="assets/images/Tropical/plant.png" class="background">
 
 </section>
 
@@ -17,7 +17,7 @@
   <h2>Soccer Rules</h2>
   <div class="row"> 
 
-    <div class="column">
+    <div class="col-3 col-s-12">
 
       <div class="card border-primary mb-3" style="max-width: 20rem;">
         <div class="card-header">Field of Play</div>
@@ -38,7 +38,7 @@
        </div>
     </div>
 
-      <div class="column">
+      <div class="col-3 col-s-12">
        <div class="card text-white bg-danger mb-3" style="max-width: 20rem;">
         <div class="card-header">Fouls and midconduct</div>
         <div class="card-body"> 
@@ -74,7 +74,7 @@
         </div>
       </div>
       </div>
-      <div class="column">
+      <div class="col-3 col-s-12">
       <div class="card text-white bg-warning mb-3" style="max-width: 20rem;">
         <div class="card-header">Card</div>
         <div class="card-body">
@@ -105,7 +105,7 @@
       </div>
       </div>
 
-      <div class="column">
+      <div class="col-3 col-s-12">
       <div class="card text-white bg-dark mb-3" style="max-width: 20rem;">
         <div class="card-header">Type of kicks</div>
         <div class="card-body">
@@ -135,76 +135,94 @@
     <ul class="tabs-container">
       <li  (click)="onTabClick('Shooting')" [class.active]="activeTab == 'Shooting'" class="tab-link">Shooting</li>
       <li (click)="onTabClick('Dribbling Skills')" [class.active]="activeTab == 'Dribbling Skills'"  class="tab-link">Dribbling Skills</li>
-      <li (click)="onTabClick('Passing and Receiving')" [class.active]="activeTab == 'Passing and Receiving'"  class="tab-link">Passing and Receiving</li>
+      <li (click)="onTabClick('Passing')" [class.active]="activeTab == 'Passing'"  class="tab-link">Passing</li>
       <li (click)="onTabClick('Defending')" [class.active]="activeTab == 'Defending'"  class="tab-link">Defending</li>
     </ul>
     <div *ngIf="activeTab == 'Shooting'" class="w-100">
       
       <img src="/assets/images/Approach.webp"  style="width:50%;" class="center">
-      <li class="word">To gain stability, place your supporting foot next to the ball.
+      <ul class="word">
+        Step 1
+        <p></p>
+        To gain stability, place your supporting foot next to the ball.
         Your aim will be more accurate if you point your grounded foot in the desired direction for the ball to travel.
-      </li>
+      </ul>
 
       <img src="/assets/images/contactpoint.webp"  style="width:50%;" class="center">
-      <li class="word">
-        Use the top of your foot, sometimes referred to as your laces, to strike the ball. 
-        Lock your ankle when you kick to generate force with your striking foot.
-      </li>
-      <li class="word">
-        After kicking the ball, extend your shooting leg in the same general direction.
-This will give the shot the full force it needs to enter the goal.
-      </li>
+      <ul class="word">
+        Step 2
+        <p></p>
+        <li>Use the top of your foot, sometimes referred to as your laces, to strike the ball. 
+          Lock your ankle when you kick to generate force with your striking foot.</li>
+
+          <li> After kicking the ball, extend your shooting leg in the same general direction.
+            This will give the shot the full force it needs to enter the goal.</li>
+        
+      </ul>
+     
 
       <img src="/assets/images/dribbleshot.webp"  style="width:50%;" class="center">
-      <li class="word">
-        Before you take a shot in a game, you'll often be dribbling the ball.
-Push the ball out in front of you a bit to give yourself some room to move before setting your foot and shooting.
-      </li>
-      <li class="word">
-        Keep in mind to point your supporting foot in the same direction as the ball's flight.
-      </li>
+      <ul class="word">
+        Step 3 
+        <p></p>
+        <li>Before you take a shot in a game, you'll often be dribbling the ball.
+          Push the ball out in front of you a bit to give yourself some room to move before setting your foot and shooting.</li>
+          <li>
+            Keep in mind to point your supporting foot in the same direction as the ball's flight.
+          </li>
+      </ul>
+     
 
     </div>
     <div *ngIf="activeTab == 'Dribbling Skills'" class="w-100">
       <img src="/assets/images/ballcontrol.webp"  style="width:50%;" class="center">
-      <li class="word">
-        You can control the course of the ball, turn the ball around, and cut off defenders by using the inside and outside of your feet. 
-        When you run with the ball, the top of your foot, or laces, propels the ball forward quickly, 
-        and when you make a sudden turn or impersonate an opponent, the bottom of your foot stops the ball.
-      </li>
-      <li class="word">
-        Keep your ankle locked and your toes pointed downward during dribbling.
-Use your supporting foot to push off the ground as you run to extend your stride.
-Maintain a sporty stance and land on the ball of your foot for improved speed and agility.
-      </li>
-      <li class="word">
-        You can keep the ball near to you, stay agile, in control, change directions quickly, 
-        and keep your opponent guessing if you tap the ball frequently.
-      </li>
+      <ul class="word">
+        Basic Dribble 
+        <p></p>
+        <li>You can control the course of the ball, turn the ball around, and cut off defenders by using the inside and outside of your feet. 
+          When you run with the ball, the top of your foot, or laces, propels the ball forward quickly, 
+          and when you make a sudden turn or impersonate an opponent, the bottom of your foot stops the ball.</li>
+        <li>Keep your ankle locked and your toes pointed downward during dribbling.
+          Use your supporting foot to push off the ground as you run to extend your stride.
+          Maintain a sporty stance and land on the ball of your foot for improved speed and agility.</li>
+        <li> You can keep the ball near to you, stay agile, in control, change directions quickly, 
+          and keep your opponent guessing if you tap the ball frequently.</li>
+        
+      </ul>
+  
+ 
     </div>
-    <div *ngIf="activeTab == 'Passing and Receiving'" class="w-100">
+    <div *ngIf="activeTab == 'Passing'" class="w-100">
       <img src="/assets/images/passing.gif"  style="width:50%;" class="center">
-      <li class="word">
+      <ul class="word">
+        Normal pass
+        <p></p>
         Turn your hip outward, elevate your leg to the side, 
         and pass the ball with the inside of your foot to execute a normal pass.
-      </li>
+      </ul>
       <img src="/assets/images/loftpass.gif"  style="width:50%;" class="center">
-      <li class="word">
+      <ul class="word">
+        Loft passed
+        <p></p>
         To execute a lofted pass, extend your placefoot horizontally, kick the ball with your big toe's knuckle, and then follow through.
-Your leg should be high when you follow through.
-      </li>
+        Your leg should be high when you follow through.
+      </ul>
     </div>
     <div *ngIf="activeTab == 'Defending'" class="w-100">
       <img src="/assets/images/tackling.gif"  style="width:50%;" class="center">
-      <li class="word">
+      <ul class="word">
+        One on One Defence
+        <p></p>
         In general, when an attacker errs, tackle him.
         When he makes a poor touch or touches the ball too close to you, strike him as soon as possible.
-      </li>
+      </ul>
       <img src="/assets/images/offballpositioning.gif"  style="width:50%;" class="center">
-      <li class="word">
+      <ul class="word">
+        Team Defence
+        <p></p>
         Where you should position yourself depends on the soccer position you’re playing and the situation. 
         In general, you’re in a good defensive position when you are in a valuable space on the field.
-      </li>
+      </ul>
      </div>
   
 

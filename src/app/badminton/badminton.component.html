@@ -1,23 +1,26 @@
+
 <section class="parallax">
   
-    <img src="assets/images/Tropical/hill1.png" id="hill1">
-    <img src="assets/images/Tropical/hill2.png" id="hill2">
-    <img src="assets/images/Tropical/hill3.png" id="hill3">
-    <img src="assets/images/Tropical/hill4.png" id="hill4">
-    <img src="assets/images/Tropical/hill5.png" id="hill5">
+    <img src="assets/images/Tropical/hill1.png" class="background" >
+    <img src="assets/images/Tropical/hill2.png" class="background">
+    <img src="assets/images/Tropical/hill3.png" class="background">
+    <img src="assets/images/Tropical/hill4.png" class="background">
+    <img src="assets/images/Tropical/hill5.png" class="background">
     
-    <img src="assets/images/Tropical/tree.png" id="tree">
+    <img src="assets/images/Tropical/tree.png" class="background">
     <h2 id="text" >Badminton</h2>
-    <img src="assets/images/Tropical/leaf.png" id="leaf">
-    <img src="assets/images/Tropical/plant.png" id="plant">
+    <img src="assets/images/Tropical/leaf.png" class="background">
+    <img src="assets/images/Tropical/plant.png" class="background">
   
   </section>
-  
+
+
+
   <section class="sec">
     <h2>Badminton Rules</h2>
     <div class="row"> 
   
-      <div class="column">
+      <div class="col-3 col-s-12">
   
         <div class="card border-primary mb-3" style="max-width: 20rem;">
           <div class="card-header">Field of Play</div>
@@ -39,7 +42,7 @@
          </div>
       </div>
   
-        <div class="column">
+        <div class="col-3 col-s-12">
          <div class="card text-white bg-danger mb-3" style="max-width: 20rem;">
           <div class="card-header">Fouls and midconduct</div>
           <div class="card-body"> 
@@ -67,7 +70,7 @@
           </div>
         </div>
         </div>
-        <div class="column">
+        <div class="col-3 col-s-12">
         <div class="card text-white bg-warning mb-3" style="max-width: 20rem;">
           <div class="card-header">Scoring System</div>
           <div class="card-body">
@@ -82,7 +85,7 @@
         </div>
         </div>
   
-        <div class="column">
+        <div class="col-3 col-s-12" >
         <div class="card text-white bg-dark mb-3" style="max-width: 20rem;">
           <div class="card-header">Lets</div>
           <div class="card-body">
@@ -116,22 +119,22 @@
       </ul>
       <div *ngIf="activeTab == 'Grip'" class="w-100">
         
-        
-        <li  class="word">
+        <img src="/assets/images/badminton/Badminton-Grip-kreedon.jpg.webp"style="width:50%;" class="center" >
+        <ul  class="word">
+          Importance of grip
+          <p></p>
           To control shots and reduce the risk of wrist injuries, it is crucial to hold the racket with the proper grip. 
           You can play both backhand and forehand strokes with ease if you have the right grip.
           A racket is held in a manner comparable to a handshake. Only the thumb will fit nicely against the handle grip's broader surface. The remaining hand will be used to simulate a handshake. 
           Don't forget to maintain a loose, welcoming grip during the handshake. It will limit one's range of motion and could eventually result in wrist damage.
-        </li>
-  
-        <img src="/assets/images/badminton/Badminton-Grip-kreedon.jpg.webp"  style="width:50%;" class="center">
-        <ul class="word">
+          <p></p>
           The usage of fingers when playing the two types of strokes is the only distinction. 
           <li>While performing forehand strokes, advance the index finger.</li>
           <li> Playing backhand strokes requires moving the thumb forward.</li>
         </ul>
-       
-      </div>
+        
+        </div> 
+     
 
       <div *ngIf="activeTab == 'Stance'" class="w-100">
         <img src="/assets/images/badminton/Forehand-Smash-KreedOn.jpg.webp"  style="width:50%;" class="center">
@@ -155,6 +158,7 @@
             Raise the arm not holding a racket and position it in front of your body at a small height above waist level. To be prepared to leap forward, 
             shift your body weight slightly forward.</li>
         </ul>
+
 
 
       </div>
@@ -202,16 +206,9 @@
           One way to think about the lob shot in badminton is as a shot with an inverted 'U' trajectory. Typically, it is played from the forecourt with the intention of lifting or "lobbing" the shuttle over the opposition. The goal is to land it at an impossible-to-clear angle as close to the baseline as possible. The quick motion backward when challenging an opponent is comparable to this. The backhand and forehand can both be used to carry it out. The front and midcourt typically become more open as a result, providing several opportunities. One can develop this fundamental badminton ability by practicing alone, without coaching.
         </li>
        </div>
-    
-  
-      
-        
-  
-  
-  
-  
+
   </section>
+
   
-  <script src="UI/angular14/src/assets/script.js"></script>
   
 

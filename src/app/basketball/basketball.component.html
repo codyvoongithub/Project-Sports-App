@@ -1,15 +1,15 @@
 <section class="parallax">
   
-    <img src="assets/images/Tropical/hill1.png" id="hill1">
-    <img src="assets/images/Tropical/hill2.png" id="hill2">
-    <img src="assets/images/Tropical/hill3.png" id="hill3">
-    <img src="assets/images/Tropical/hill4.png" id="hill4">
-    <img src="assets/images/Tropical/hill5.png" id="hill5">
-    
-    <img src="assets/images/Tropical/tree.png" id="tree">
-    <h2 id="text" >Basketball</h2>
-    <img src="assets/images/Tropical/leaf.png" id="leaf">
-    <img src="assets/images/Tropical/plant.png" id="plant">
+  <img src="assets/images/Tropical/hill1.png" class="background" >
+  <img src="assets/images/Tropical/hill2.png" class="background">
+  <img src="assets/images/Tropical/hill3.png" class="background">
+  <img src="assets/images/Tropical/hill4.png" class="background">
+  <img src="assets/images/Tropical/hill5.png" class="background">
+  
+  <img src="assets/images/Tropical/tree.png" class="background">
+  <h2 id="text" >Basketball</h2>
+  <img src="assets/images/Tropical/leaf.png" class="background">
+  <img src="assets/images/Tropical/plant.png" class="background">
   
   </section>
   
@@ -17,7 +17,7 @@
     <h2>Basketball Rules</h2>
     <div class="row"> 
   
-      <div class="column">
+      <div class="col-3 col-s-12">
   
         <div class="card border-primary mb-3" style="max-width: 20rem;">
           <div class="card-header">Field of Play</div>
@@ -40,7 +40,7 @@
          </div>
       </div>
   
-        <div class="column">
+        <div class="col-3 col-s-12">
          <div class="card text-white bg-danger mb-3" style="max-width: 20rem;">
           <div class="card-header">Fouls and midconduct</div>
           <div class="card-body"> 
@@ -68,7 +68,7 @@
           </div>
         </div>
         </div>
-        <div class="column">
+        <div class="col-3 col-s-12">
         <div class="card text-white bg-warning mb-3" style="max-width: 20rem;">
           <div class="card-header">Scoring System</div>
           <div class="card-body">
@@ -85,7 +85,7 @@
         </div>
         </div>
   
-        <div class="column">
+        <div class="col-3 col-s-12">
         <div class="card text-white bg-dark mb-3" style="max-width: 20rem;">
           <div class="card-header">Violations</div>
           <div class="card-body">
@@ -115,75 +115,100 @@
       <div *ngIf="activeTab == 'Dribbling Skills'" class="w-100">
         
         <img src="/assets/images/crossover.gif"  style="width:50%;" class="center">
-        <li  class="word">
+        <ul  class="word">
+          Crossover move<p></p>
           After you get the defensive player facing in the direction you want them to, quickly power dribble across your body while switching to your other hand.
           At this precise moment, you should be ready to set up for a jump shot or pass the ball to a teammate.
-        </li>
+        </ul>
   
         <img src="/assets/images/basketball/btb.jfif"  style="width:50%;" class="center">
-        <li class="word">
-          Behind your back, move. Instead of attempting the difficult and perhaps dangerous maneuver of crossing in between yourself 
+        <ul class="word">
+          Behind your back, move.
+          <p></p> 
+          Instead of attempting the difficult and perhaps dangerous maneuver of crossing in between yourself 
           and the defender to change directions, bounce the ball behind your back. You can outrun defenses by utilizing your body as a ball shield.
-        </li>
+        </ul>
        
   
         <img src="/assets/images/basketball/between.jfif"  style="width:50%;" class="center">
-        <li class="word">
-          Between your legs, squiggle. Dribble the ball between your legs to create a second effective shield. Normally, you would dribble back through your non-dominant leg while grabbing the ball with that hand, 
-          but there are a variety of other methods to improvise.
-        </li>
-       <li class="word">
-        Be imaginative. To increase your offensive effectiveness, experiment with various between-the-legs and directional shift combinations. When you have mastered the fundamentals of the crossover, which is essentially simply a short dribble, the only thing stopping your offensive game is your creativity.
-       </li>
-  
+        <ul class="word">
+          Between your legs, squiggle.
+          <p></p> 
+          <li>Dribble the ball between your legs to create a second effective shield. Normally, you would dribble back through your non-dominant leg while grabbing the ball with that hand, 
+            but there are a variety of other methods to improvise.</li>
+          <li>        Be imaginative. To increase your offensive effectiveness, experiment with various between-the-legs and directional shift combinations. When you have mastered the fundamentals of the crossover, which is essentially simply a short dribble, the only thing stopping your offensive game is your creativity.
+          </li>
+        </ul>
       </div>
+      
+      
+  
+      
       <div *ngIf="activeTab == 'Shooting'" class="w-100">
         <img src="/assets/images/basketball/shoulder.jfif"  style="width:50%;" class="center">
-        <li class="word">
+        <ul class="word">
+          Step 1
+          <p></p>
           Maintain a shoulder-width distance or less between your feet, with your legs slightly staggered. You should gently place your shooting foot in front of your non-shooting foot. Your shoulders, hips, and elbows should be aligned with the basket, 
           and your feet should be turned 10 to 45 degrees to your off-side.
-        </li>
+        </ul>
         <img src="/assets/images/elbow.jfif"  style="width:50%;" class="center">
-        <li class="word">
+        <ul class="word">
+          Step 2
+          <p></p>
           Place your elbow so that it is parallel to your shoulder and not directly beneath the ball. Dip the ball when it is passed to you to your thigh or waist. You don't need to dip if you catch a bounce pass, another low pass, 
           or are shooting off the dribble because you are already doing so.
-        </li>
+        </ul>
         <img src="/assets/images/basketball/shootbball.jfif"  style="width:50%;" class="center">
-        <li class="word">
+        <ul class="word">
+          Step 3
+          <p></p>
           Let go of the ball. Release the ball with your shooting hand pointed towards the basket as soon as you are about to jump. Instead of the ball travelling in a straight line toward the hoop, push your wrist and straighten your elbow. 
           Your guiding hand should travel to lightly touch your shooting arm just below the wrist as you release the ball.
-        </li>
+        </ul>
       </div>
       <div *ngIf="activeTab == 'Passing and Receiving'" class="w-100">
         <img src="/assets/images/basketball/chestpass.jfif"  style="width:50%;" class="center">
-        <li class="word">
+        <ul class="word">
+          Step 1
+          <p></p>
           Take a firm hold of the ball with your fingertips pointing in the direction of your chin.
-        </li>
+        </ul>
         <img src="/assets/images/basketball/feetposition.jfif"  style="width:50%;" class="center">
-        <li class="word">
+        <ul class="word">
+          Step 2
+          <p></p>
           Using your dominant foot, step forward and launch the ball.
-        </li>
+        </ul>
         <img src="/assets/images/basketball/bouncepass.jfif"  style="width:50%;" class="center">
-        <li class="word">
+        <ul class="word">
+          Step 3
+          <p></p>
           To execute a bounce pass, bounce the ball rather than tossing it into the air.
-        </li>
+        </ul>
       </div>
       <div *ngIf="activeTab == 'Defending'" class="w-100">
         <img src="/assets/images/basketball/defend.jfif"  style="width:50%;" class="center">
-        <li class="word">
+        <ul class="word">
+          Method 1
+          <p></p>
           Keep your hands open and in motion as you raise them. Try spreading your hands out to the sides or keeping one hand close to your hip and using the other 
           to dig for the ball with the other. Avoid letting your hands rest on your sides at all costs.
-        </li>
+        </ul>
         <img src="/assets/images/basketball/pressure.jfif"  style="width:50%;" class="center">
-        <li class="word">
+        <ul class="word">
+          Method 2
+          <p></p>
           Put immediate pressure on the ball-carrying player. Go up to the player holding the ball as soon as you notice they have no one on them to provide pressure. An offensive player with an open passing or dribbling lane poses the most threat to a defense, 
           and the simplest approach to stop this is to apply pressure as quickly as you can.
-        </li>
+        </ul>
         <img src="/assets/images/basketball/offball.jfif"  style="width:50%;" class="center">
-        <li class="word">
+        <ul class="word">
+          Method 3
+          <p></p>
           Always move around in your position. When you're playing defense, make sure you're never still. Adjust your position when the basketball or your player moves to be ready to respond quickly to any play.
            Maintain your defensive position and check that you can see the ball and the person you're covering at all times.
-        </li>
+        </ul>
        </div>
     
   
@@ -195,5 +220,5 @@
   
   </section>
   
-  <script src="UI/angular14/src/assets/script.js"></script>
+
   
