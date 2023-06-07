@@ -12,8 +12,6 @@ import { ResetPasswordService } from '../services/reset-password.service';
   styleUrls: ['./reset.component.css']
 })
 export class ResetComponent implements OnInit{
-  
-  
 
   resetPasswordForm!:FormGroup;
   emailToReset!: string;

@@ -34,7 +34,6 @@ export class LoginComponent implements OnInit{
 
     onLogin(){
       if(this.loginForm.valid){
-
         console.log(this.loginForm.value)
         this.auth.login(this.loginForm.value)
         .subscribe({
