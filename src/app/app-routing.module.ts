@@ -14,6 +14,7 @@ import { SoccerComponent } from './component/soccer/soccer.component';
 import { ResetComponent } from './reset/reset.component';
 import { BadmintonComponent } from './component/badminton/badminton.component';
 import { VolleyballComponent } from './component/volleyball/volleyball.component';
+import { CoachProfileComponent } from './component/coach-profile/coach-profile.component';
 
 //canActivate:[AuthGuard]
 
@@ -27,7 +28,9 @@ const routes: Routes = [
   {path:'basketball',component:BasketballComponent},
   {path:'reset',component:ResetComponent},
   {path:'badminton',component:BadmintonComponent},
-  {path:'volleyball',component:VolleyballComponent}
+  {path:'volleyball',component:VolleyballComponent},
+  {path:'coach/:id',component:CoachProfileComponent}
+  
 ];
 
 @NgModule({
