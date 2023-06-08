@@ -5,7 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CoachComponent } from './coach/coach.component';
 
-import { StudentComponent } from './student/student.component';
+
 
 
 
@@ -17,16 +17,16 @@ import { HomeComponent } from './home/home.component';
 
 
 
-import { SoccerComponent } from './soccer/soccer.component';
+import { SoccerComponent } from './component/soccer/soccer.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { LoginComponent } from './login/login.component';
 import { SignupComponent } from './signup/signup.component';
-import { BasketballComponent } from './basketball/basketball.component';
+import { BasketballComponent } from './component/basketball/basketball.component';
 import { TokenInterceptor } from './interceptors/token.interceptor';
 import { CommonModule } from '@angular/common';
 import { ResetComponent } from './reset/reset.component';
-import { BadmintonComponent } from './badminton/badminton.component';
-import { VolleyballComponent } from './volleyball/volleyball.component';
+import { BadmintonComponent } from './component/badminton/badminton.component';
+import { VolleyballComponent } from './component/volleyball/volleyball.component';
 
 
 
@@ -34,7 +34,7 @@ import { VolleyballComponent } from './volleyball/volleyball.component';
   declarations: [
     AppComponent,
     CoachComponent,
-    StudentComponent,
+
     HeaderComponent,
     FooterComponent,
     HomeComponent,
