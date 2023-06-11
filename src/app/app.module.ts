@@ -12,7 +12,7 @@ import { CoachComponent } from './coach/coach.component';
 import{HttpClientModule, HTTP_INTERCEPTORS}from '@angular/common/http';
 import { FormsModule,ReactiveFormsModule } from '@angular/forms';
 import { HeaderComponent } from './header/header.component';
-import { FooterComponent } from './footer/footer.component';
+
 import { HomeComponent } from './home/home.component';
 
 
@@ -38,7 +38,7 @@ import { CoachProfileComponent } from './component/coach-profile/coach-profile.c
     CoachComponent,
 
     HeaderComponent,
-    FooterComponent,
+
     HomeComponent,
     SoccerComponent,
     LoginComponent,
@@ -59,6 +59,7 @@ import { CoachProfileComponent } from './component/coach-profile/coach-profile.c
     ReactiveFormsModule,
     BrowserAnimationsModule,
     CommonModule, 
+    
     
   ],
   providers: [{
