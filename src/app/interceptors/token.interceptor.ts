@@ -24,8 +24,12 @@ export class TokenInterceptor implements HttpInterceptor {
       })
     }
     
+    
     return next.handle(request).pipe(
       catchError((err: any)=>{
+        if(request.url.includes('register')){
+          return throwError(()=> (err));
+        }
         if(err instanceof HttpErrorResponse){
           if(err.status === 401){
             //handle

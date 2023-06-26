@@ -32,7 +32,7 @@
                             <label for="exampleInputPassword1" class="form-label mt-4">Password</label>
                             <input type="password" class="form-control" formControlName="password" id="exampleInputPassword1" placeholder="Password">
                           </div>
-                          <label for="exampleInputPassword1" class="form-label mt-4">Password must has an Alphanumerical letter,a special character as well as numbers.</label>
+                          <label for="exampleInputPassword1" class="form-label mt-4">Password must has an Capital letter,a special character as well as numbers.</label>
                           <small *ngIf="signupForm.controls['password'].dirty && signupForm.hasError('required','password')"class="text-danger">Password is required</small>
                           <p></p>
                           <button type="submit" class="btn btn-outline-secondary" (click)="onSignUp()">Sign Up</button>

@@ -29,6 +29,7 @@ import { BadmintonComponent } from './component/badminton/badminton.component';
 import { VolleyballComponent } from './component/volleyball/volleyball.component';
 import { CoachProfileComponent } from './component/coach-profile/coach-profile.component';
 
+import { NgToastModule } from 'ng-angular-popup';
 
 
 
@@ -59,6 +60,7 @@ import { CoachProfileComponent } from './component/coach-profile/coach-profile.c
     ReactiveFormsModule,
     BrowserAnimationsModule,
     CommonModule, 
+    NgToastModule
     
     
   ],
