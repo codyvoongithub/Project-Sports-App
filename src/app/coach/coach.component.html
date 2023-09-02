@@ -25,6 +25,7 @@
                 <th scope="col">LastName</th>
                 <th scope="col">Username</th>
                 <th scope="col">Email/Contact Details</th>
+                <th scope="col" *ngIf="role ==='Admin'">Delete Accounts</th>
             </tr>
         </thead>
         <tbody>
@@ -34,7 +35,7 @@
                 <td>{{user.lastName}}</td>
                 <td>{{user.userName}}</td>
                 <td>{{user.email}}</td>
-
+                <td><button *ngIf="role === 'Admin'"  class="btn btn-danger" (click)="onDelete(user.id)">Delete</button></td>
 
             </tr>
         </tbody>

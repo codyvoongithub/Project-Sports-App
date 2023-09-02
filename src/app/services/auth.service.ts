@@ -70,4 +70,10 @@ export class AuthService {
   renewToken(tokenApi : TokenApiModel){
     return this.http.post<any>(`${this.baseUrl}refresh`,tokenApi)
   }
+
+  delete(userId: number) {
+    return this.http.delete<any>(`${this.baseUrl}delete/${userId}`);
+  }
+  
+  
 }
