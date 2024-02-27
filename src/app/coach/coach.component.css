@@ -180,3 +180,33 @@
     .col-12 {width: 100%;}
   }
    
+  .custom-table {
+    border-radius: 10px; /* Adding rounded corners */
+    color: black; /* Setting text color to black */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Using a nice font */
+    background-color: white; /* Setting background color to white */
+}
+
+.custom-table thead th,
+.custom-table tbody td {
+    border-color: black; /* Setting border color */
+}
+
+.custom-table .btn {
+    color: #fff; /* Button text color */
+    border-color: #fff; /* Button border color */
+}
+
+.custom-table .btn:hover {
+    background-color: #007bff; /* Button hover background color */
+    border-color: #007bff; /* Button hover border color */
+}
+
+.custom-table .btn:hover:not(:disabled) {
+    opacity: 0.85; /* Reduce opacity on hover for better feedback */
+}
+
+.custom-table .btn:active {
+    background-color: #0056b3; /* Button active background color */
+    border-color: #0056b3; /* Button active border color */
+}

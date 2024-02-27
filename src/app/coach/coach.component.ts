@@ -46,5 +46,11 @@ export class CoachComponent implements OnInit {
       }
     )
   }
+
+  onJoin(userId: number) {
+    
+    console.log('Join button clicked for user with ID:', userId);
+    
+  }
 }
 
