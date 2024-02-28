@@ -22,9 +22,9 @@
           <li class="nav-item">
             <button routerLink="coach" class="btn btn-primary" Button>coach</button>
           </li>
-          <li class="nav-item"> 
-            <button (click)="logout()"  class="btn btn-danger">Log out</button>
-          </li>
+          <li class="nav-item"> <!-- Only show when logged in -->
+            <button (click)="logout()" class="btn btn-danger">Log out</button>
+        </li>
         </ul>
        
 

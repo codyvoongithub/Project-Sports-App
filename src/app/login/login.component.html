@@ -22,10 +22,6 @@
                           <div class="form-inline fr mt-4">
                             <a id="forget" data-bs-toggle="modal" data-bs-target="#exampleModal" >Forget Password?</a>
                           </div>
-                          <div class="form-inline fr mt-4">
-                            <a id="forget" data-bs-toggle="modal" data-bs-target="#studentModal">Click here if you are a student.</a>
-                          </div>
-                          
                           <button type="submit" class="btn btn-outline-secondary" (click)="onLogin()">Login</button>
                           <div class="text-center pt-3 text-muted">Don't have an account? <a id="forget" routerLink="/signup">Sign up</a></div>
                           
@@ -56,8 +52,7 @@
             <small *ngIf="!resetPasswordEmail" class="text-danger">*Email is required*</small>
             <small *ngIf="!isValidEmail && resetPasswordEmail" class="text-danger">*Email is invalid*</small>
         </div>
-        <div class="modal-footer">
-          <button id="closeBtn"  type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <div class="modal-footer"> 
           <button type="button" (click)="confirmToSend()"  class="btn btn-primary">Send</button>
         </div>
     </div>

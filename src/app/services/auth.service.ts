@@ -74,6 +74,10 @@ export class AuthService {
   delete(userId: number) {
     return this.http.delete<any>(`${this.baseUrl}delete/${userId}`);
   }
+
+  update(userId: number, updatedData: any) {
+    return this.http.post<any>(`${this.baseUrl}update/${userId}`, updatedData);
+  }
   
   
 }

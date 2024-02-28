@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { ApiService } from '../services/api.service';
-import { AuthService } from '../services/auth.service';
-import { UserStoreService } from '../services/user-store.service';
+import { ApiService } from '../../services/api.service';
+import { AuthService } from '../../services/auth.service';
+import { UserStoreService } from '../../services/user-store.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-coach',
@@ -13,7 +14,7 @@ export class CoachComponent implements OnInit {
   public users:any = [];
   public fullName: string = "";
   public role!:string;
-  constructor(private api: ApiService,private auth: AuthService, private userStore:UserStoreService) { }
+  constructor(private api: ApiService,private auth: AuthService, private userStore:UserStoreService, private router: Router,) { }
 
   ngOnInit() {
     this.api.getUsers()
@@ -48,9 +49,9 @@ export class CoachComponent implements OnInit {
   }
 
   onJoin(userId: number) {
-    
     console.log('Join button clicked for user with ID:', userId);
-    
+    // Redirect to the coach profile component with the user's ID
+    this.router.navigate(['/coach-profile', userId]);
   }
 }
 

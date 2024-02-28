@@ -1,0 +1,39 @@
+<section class="parallax">
+  
+    <img src="assets/images/Tropical/hill1.png" class="background" >
+    <img src="assets/images/Tropical/hill2.png" class="background">
+    <img src="assets/images/Tropical/hill3.png" class="background">
+    <img src="assets/images/Tropical/hill4.png" class="background">
+    <img src="assets/images/Tropical/hill5.png" class="background">
+    
+    <img src="assets/images/Tropical/tree.png" class="background">
+    <img src="assets/images/Tropical/leaf.png" class="background">
+    <h1 id="text">Hello, {{fullName}}</h1>
+    
+    <img src="assets/images/Tropical/plant.png" class="background">
+  
+  </section>
+
+<section class="sec">
+    <h2>Edit Coach Profile</h2>
+  <form [formGroup]="updateForm" (ngSubmit)="onSubmit()">
+    <div>
+        <label for="description">Description:</label>
+        <textarea id="description" formControlName="description" required></textarea>
+    </div>
+    <div>
+        <label for="achievements">Achievements:</label>
+        <textarea id="achievements" formControlName="achievements" required></textarea>
+    </div>
+    <div>
+        <label for="centerAddress">Address of Center:</label>
+        <input type="text" id="centerAddress" formControlName="centerAddress" required>
+    </div>
+    <div>
+        <label for="price">Price: (USD per session)</label>
+        <input type="text" id="price" formControlName="price" required>
+    </div>
+    <button type="submit">Submit</button>
+</form>
+</section>
+  

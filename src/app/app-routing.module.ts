@@ -2,7 +2,7 @@ import { importProvidersFrom, NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { BasketballComponent } from './component/basketball/basketball.component';
 
-import { CoachComponent } from './coach/coach.component';
+import { CoachComponent } from './component/coach/coach.component';
 import { AuthGuard } from './guards/auth.guard';
 
 import { HomeComponent } from './home/home.component';
@@ -15,6 +15,7 @@ import { ResetComponent } from './reset/reset.component';
 import { BadmintonComponent } from './component/badminton/badminton.component';
 import { VolleyballComponent } from './component/volleyball/volleyball.component';
 import { CoachProfileComponent } from './component/coach-profile/coach-profile.component';
+import { CoachFormComponent } from './component/coach-form/coach-form.component';
 
 //canActivate:[AuthGuard]
 
@@ -29,7 +30,8 @@ const routes: Routes = [
   {path:'reset',component:ResetComponent},
   {path:'badminton',component:BadmintonComponent},
   {path:'volleyball',component:VolleyballComponent},
-  {path:'coach/:id',component:CoachProfileComponent}
+  {path:'coach-profile/:id',component:CoachProfileComponent},
+  {path:'coach-form/:userId',component:CoachFormComponent},
   
 ];
 

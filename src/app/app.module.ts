@@ -3,7 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { CoachComponent } from './coach/coach.component';
+import { CoachComponent } from './component/coach/coach.component';
 
 
 
@@ -30,6 +30,7 @@ import { VolleyballComponent } from './component/volleyball/volleyball.component
 import { CoachProfileComponent } from './component/coach-profile/coach-profile.component';
 
 import { NgToastModule } from 'ng-angular-popup';
+import { CoachFormComponent } from './component/coach-form/coach-form.component';
 
 
 
@@ -49,6 +50,7 @@ import { NgToastModule } from 'ng-angular-popup';
     BadmintonComponent,
     VolleyballComponent,
     CoachProfileComponent,
+    CoachFormComponent,
 
     
   ],
