@@ -12,16 +12,51 @@ import { ActivatedRoute,Router } from '@angular/router';
   styleUrls: ['./coach-profile.component.css']
 })
 export class CoachProfileComponent implements OnInit{
-
+  public users:any = [];
+  public role!:string;
+  
   constructor(private api: ApiService,private auth: AuthService, private userStore:UserStoreService, private router: Router,private route: ActivatedRoute) { }
+  
   ngOnInit() {
+    
+    const userId = this.route.snapshot.paramMap.get('id');
+    if (userId !== null) {
+      const userIdNumber = +userId;
+    this.api.getCoachProfile(userIdNumber)
+    .subscribe(res =>{
+      this.users = res;
+      this.logUsers();
+    });
+  }
+
+  this.userStore.getRoleFromStore()
+    .subscribe(val=>{
+      const roleFromToken = this.auth.getRoleFromToken();
+      this.role = val || roleFromToken;
+      console.log('Role:', this.role);
+    })
+
    
+
     };
+    
+
     onUpdate() {
-      // Retrieve the user ID from the URL
+      
       const userId = this.route.snapshot.paramMap.get('id');
       console.log('User ID:', userId);
-      // Redirect to the coach profile component with the user's ID
+      
       this.router.navigate(['/coach-form', userId]);
   }
+  logUsers() {
+    for (const key in this.users) {
+        if (Object.prototype.hasOwnProperty.call(this.users, key)) {
+            console.log(key + ':', this.users[key]);
+        }
+    }
 }
+  
+}
+
+
+

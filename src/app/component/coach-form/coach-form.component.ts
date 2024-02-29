@@ -31,17 +31,14 @@ export class CoachFormComponent implements OnInit {
 
   ngOnInit() {
     this.updateForm = this.fb.group({
-      description: ['Please describe about yourself '], // Default description
-      achievements: ['Please showcase your acheivements '], // Default achievements
-        address: ['Please state the address of your facility '], // Default address
+      description: [' '], // Default description
+      achievements: [' '], // Default achievements
+        address: [' '], // Default address
         price: [0] // Default price
     });
    
 
-    this.api.getUsers()
-      .subscribe(res => {
-        this.users = res;
-      });
+    
 
     this.userStore.getFullNameFromStore()
       .subscribe(val => {
@@ -52,16 +49,17 @@ export class CoachFormComponent implements OnInit {
 
   onSubmit() {
     if (this.updateForm.valid) {
-      const userId = this.route.snapshot.params['userId']; // Extract userId from the URL
+      const userId = this.route.snapshot.params['userId']; 
+      
       const updatedData = this.updateForm.value;
-
+      
       this.auth.update(userId, updatedData)
         .subscribe({
           next: (res) => {
-            alert(res.message);
+            
             this.toast.success({ detail: "Success", summary: res.message, duration: 5000 });
             this.updateForm.reset();
-            this.router.navigate(['login']);
+            this.router.navigate(['coach-profile', userId]);
           },
           error: (err) => {
             alert(err?.error?.message);

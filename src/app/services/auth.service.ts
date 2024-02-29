@@ -67,6 +67,7 @@ export class AuthService {
     }
   }
 
+ 
   renewToken(tokenApi : TokenApiModel){
     return this.http.post<any>(`${this.baseUrl}refresh`,tokenApi)
   }
@@ -76,7 +77,7 @@ export class AuthService {
   }
 
   update(userId: number, updatedData: any) {
-    return this.http.post<any>(`${this.baseUrl}update/${userId}`, updatedData);
+    return this.http.post<any>(`${this.baseUrl}update-coach-profile/${userId}`, updatedData);
   }
   
   

@@ -9,6 +9,7 @@ import { BehaviorSubject, Observable } from 'rxjs';
 export class UserStoreService {
 private fullName$ = new BehaviorSubject<string>("");
 private role$ = new BehaviorSubject<string>("");
+private userid$ = new BehaviorSubject<number>(0);
 
   constructor(private http:HttpClient) { }
   public getRoleFromStore(){
@@ -25,5 +26,4 @@ private role$ = new BehaviorSubject<string>("");
     this.fullName$.next(fullname);
   }
   
-
 }

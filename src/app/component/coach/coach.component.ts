@@ -32,6 +32,7 @@ export class CoachComponent implements OnInit {
     .subscribe(val=>{
       const roleFromToken = this.auth.getRoleFromToken();
       this.role = val || roleFromToken;
+      console.log('Role:', this.role);
     })
   }
 
@@ -53,5 +54,8 @@ export class CoachComponent implements OnInit {
     // Redirect to the coach profile component with the user's ID
     this.router.navigate(['/coach-profile', userId]);
   }
+
+  
+  
 }
 

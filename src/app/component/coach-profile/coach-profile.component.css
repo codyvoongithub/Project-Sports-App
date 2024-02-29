@@ -1,0 +1,77 @@
+
+.parallax{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  
+  }
+  
+  #text{
+    position: absolute;
+    font-size: 5em;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, .2);
+   
+  }
+  
+  .parallax img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    pointer-events: none;
+  }
+  
+  .sec{
+    position: relative;
+    background: #003329;
+    padding: 100px;
+  
+  }
+  .sec h3{
+    font-size: 3em;
+    color: white;
+    margin-bottom: 10px;
+  }
+
+  /* New*/
+      .background
+      {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        z-index: -1;
+      }
+      
+      .rounded {
+        background-color: white;
+        border-radius: 10px;
+        padding: 20px;
+        margin-bottom: 20px; /* Adds some space between containers */
+    }
+  
+  
+    .line {
+        width: 100%;
+        border-bottom: 1px solid #ccc; /* Thin line style */
+        margin-bottom: 10px; /* Adjust spacing */
+    }
+    
+    .description-container h2,
+    .address-container h2,
+    .price-container h2 {
+        margin-bottom: 10px; /* Add spacing below headers */
+    }
+    
+    .description-container p,
+    .address-container p,
+    .price-container p {
+        font-size: 16px; /* Adjust font size */
+        line-height: 1.6; /* Adjust line height */
+        color: #333; /* Adjust text color */
+    }
+     
+  

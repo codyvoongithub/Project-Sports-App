@@ -26,29 +26,29 @@
                     <th scope="col">Last Name</th>
                     <th scope="col">Username</th>
                     <th scope="col">Email/Contact Details</th>
-                    
                     <th scope="col">View Coach Profile</th>
                     <th scope="col" *ngIf="role === 'Admin'">Actions</th>
-                    
                 </tr>
             </thead>
             <tbody>
-                <tr *ngFor="let user of users; let i = index">
-                    <td>{{ i + 1 }}</td>
-                    <td>{{ user.firstName }}</td>
-                    <td>{{ user.lastName }}</td>
-                    <td>{{ user.userName }}</td>
-                    <td>{{ user.email }}</td>
-                    <td>
-                        <button class="btn btn-primary btn-sm" (click)="onJoin(user.id)">View</button>
-                    </td>
-                    <td *ngIf="role === 'Admin'">
-                        <button class="btn btn-danger btn-sm" (click)="onDelete(user.id)">Delete</button>
-                    </td>
-                </tr>
+                <ng-container *ngFor="let user of users; let i = index">
+                    <tr *ngIf="user.role === 'coach'">
+                        <td>{{i + 1}}</td>
+                        <td>{{ user.firstName }}</td>
+                        <td>{{ user.lastName }}</td>
+                        <td>{{ user.userName }}</td>
+                        <td>{{ user.email }}</td>
+                        <td>
+                            <button class="btn btn-primary btn-sm" (click)="onJoin(user.id)">View</button>
+                        </td>
+                        <td *ngIf="role === 'Admin'">
+                            <button class="btn btn-danger btn-sm" (click)="onDelete(user.id)">Delete</button>
+                        </td>
+                    </tr>
+                </ng-container>
             </tbody>
         </table>
     </div>
-    
 </section>
+
 

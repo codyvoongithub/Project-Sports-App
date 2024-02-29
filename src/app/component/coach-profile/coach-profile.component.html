@@ -1,2 +1,72 @@
 
-<button class="btn btn-primary btn-sm" (click)="onUpdate()">View</button>
+<section class="parallax">
+  
+    <img src="assets/images/Tropical/hill1.png" class="background" >
+    <img src="assets/images/Tropical/hill2.png" class="background">
+    <img src="assets/images/Tropical/hill3.png" class="background">
+    <img src="assets/images/Tropical/hill4.png" class="background">
+    <img src="assets/images/Tropical/hill5.png" class="background">
+    
+    <img src="assets/images/Tropical/tree.png" class="background">
+    <img src="assets/images/Tropical/leaf.png" class="background">
+    <h1 id="text">Coach Profile</h1>
+    
+    <img src="assets/images/Tropical/plant.png" class="background">
+  
+  </section>
+  <section class="sec">
+    <h3>I am Cody</h3>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="achievement-container rounded">
+                    <h2>Achievements</h2>
+                    <div class="line"></div>
+                    <p>{{ users.achievements }}</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="description-container rounded">
+                    <h2>Description</h2>
+                    <div class="line"></div>
+                    <p>{{ users.description }}</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="button-container text-right">
+                    <div id="buttonContainer">
+                        <button *ngIf="role === 'student'" class="btn btn-primary btn-md" style="background-color: greenyellow; color: black;" (click)="onUpdate()">Click here to join!!!</button>
+                        <div *ngIf="role === 'coach'" class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Dropdown
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <button class="dropdown-item"  (click)="onUpdate()">EDIT COACH PROFILE</button>
+                                <button class="dropdown-item" >Option 2</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="address-container rounded">
+                    <h2>Address</h2>
+                    <div class="line"></div>
+                    <p>{{ users.address }}</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="price-container rounded">
+                    <h2>Price (USD per session)</h2>
+                    <div class="line"></div>
+                    <p>{{ users.price }}</p>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</section>
+
+

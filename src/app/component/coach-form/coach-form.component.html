@@ -8,14 +8,14 @@
     
     <img src="assets/images/Tropical/tree.png" class="background">
     <img src="assets/images/Tropical/leaf.png" class="background">
-    <h1 id="text">Hello, {{fullName}}</h1>
+    <h1 id="text">Edit Coach Profile</h1>
     
     <img src="assets/images/Tropical/plant.png" class="background">
   
   </section>
 
 <section class="sec">
-    <h2>Edit Coach Profile</h2>
+    <h2>You can edit your Profile here.</h2>
   <form [formGroup]="updateForm" (ngSubmit)="onSubmit()">
     <div>
         <label for="description">Description:</label>
@@ -26,8 +26,8 @@
         <textarea id="achievements" formControlName="achievements" required></textarea>
     </div>
     <div>
-        <label for="centerAddress">Address of Center:</label>
-        <input type="text" id="centerAddress" formControlName="centerAddress" required>
+        <label for="address">Address of Center:</label>
+        <input type="text" id="address" formControlName="address" required>
     </div>
     <div>
         <label for="price">Price: (USD per session)</label>
