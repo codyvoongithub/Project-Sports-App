@@ -48,6 +48,9 @@ export class LoginComponent implements OnInit{
             const tokenPayload = this.auth.decodedToken();
             this.userStore.setFullNameForStore(tokenPayload.unique_name);
             this.userStore.setRoleForStore(tokenPayload.role);
+            localStorage.setItem('userID', tokenPayload.nameid);
+            console.log('User ID saved to local storage:', tokenPayload.nameid);
+            
             this.router.navigate(['Home']);
           },
           error:(err)=>{

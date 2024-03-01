@@ -31,6 +31,7 @@ import { CoachProfileComponent } from './component/coach-profile/coach-profile.c
 
 import { NgToastModule } from 'ng-angular-popup';
 import { CoachFormComponent } from './component/coach-form/coach-form.component';
+import { StudentsJoinedComponent } from './students-joined/students-joined.component';
 
 
 
@@ -51,6 +52,7 @@ import { CoachFormComponent } from './component/coach-form/coach-form.component'
     VolleyballComponent,
     CoachProfileComponent,
     CoachFormComponent,
+    StudentsJoinedComponent,
 
     
   ],

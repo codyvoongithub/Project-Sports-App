@@ -14,14 +14,16 @@ import { ActivatedRoute,Router } from '@angular/router';
 export class CoachProfileComponent implements OnInit{
   public users:any = [];
   public role!:string;
+userId: any;
   
   constructor(private api: ApiService,private auth: AuthService, private userStore:UserStoreService, private router: Router,private route: ActivatedRoute) { }
   
   ngOnInit() {
     
-    const userId = this.route.snapshot.paramMap.get('id');
-    if (userId !== null) {
-      const userIdNumber = +userId;
+    const coachId = this.route.snapshot.paramMap.get('id');
+    
+    if (coachId !== null) {
+      const userIdNumber = +coachId;
     this.api.getCoachProfile(userIdNumber)
     .subscribe(res =>{
       this.users = res;
@@ -36,18 +38,14 @@ export class CoachProfileComponent implements OnInit{
       console.log('Role:', this.role);
     })
 
-   
-
     };
     
 
     onUpdate() {
-      
       const userId = this.route.snapshot.paramMap.get('id');
-      console.log('User ID:', userId);
-      
       this.router.navigate(['/coach-form', userId]);
   }
+  
   logUsers() {
     for (const key in this.users) {
         if (Object.prototype.hasOwnProperty.call(this.users, key)) {
@@ -55,7 +53,35 @@ export class CoachProfileComponent implements OnInit{
         }
     }
 }
-  
+getIdFromURL(): string {
+  // Logic to extract id from URL, for example:
+  const url = window.location.href;
+  const idIndex = url.lastIndexOf('/') + 1;
+  return url.substring(idIndex);
+}
+
+isDropdownVisible(): boolean {
+  const idFromURL = this.getIdFromURL();
+  const idFromLocalStorage = localStorage.getItem('userID');
+  console.log('ID from URL:', idFromURL);
+  console.log('ID from Local Storage:', idFromLocalStorage);
+  const isVisible = idFromURL === idFromLocalStorage;
+  if (isVisible) {
+    return true;
+  }
+
+  return false;
+}
+ onView(){
+  const userId = this.route.snapshot.paramMap.get('id');
+  this.router.navigate(['/students-joined', userId]);
+ }
+
+ onJoin() {
+  const studentID = localStorage.getItem('userID');
+  const idFromURL = this.getIdFromURL();
+}
+ 
 }
 
 

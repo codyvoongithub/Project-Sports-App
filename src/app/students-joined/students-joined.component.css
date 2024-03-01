@@ -1,0 +1,46 @@
+.parallax{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  
+  }
+  
+  #text{
+    position: absolute;
+    font-size: 5em;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, .2);
+   
+  }
+  
+  .parallax img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    pointer-events: none;
+  }
+  
+  .sec{
+    position: relative;
+    background: #003329;
+    padding: 100px;
+  
+  }
+  .sec h3{
+    font-size: 3em;
+    color: white;
+    margin-bottom: 10px;
+  }
+
+  /* New*/
+      .background
+      {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        z-index: -1;
+      }

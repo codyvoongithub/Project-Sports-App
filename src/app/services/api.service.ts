@@ -18,6 +18,10 @@ getCoachProfile(userId: number){
   return this.http.get<any>(`${this.baseUrl}coach-profile/${userId}`);
 }
 
+getStudentProfile(userId:number){
+  return this.http.get<any>(`${this.baseUrl}student-profile/${userId}`);
+}
+
 
 
 }

@@ -15,7 +15,7 @@
   
   </section>
   <section class="sec">
-    <h3>I am Cody</h3>
+    <h3>Welcome!</h3>
     <div class="container">
         <div class="row">
             <div class="col-md-4">
@@ -36,15 +36,16 @@
                 <div class="button-container text-right">
                     <div id="buttonContainer">
                         <button *ngIf="role === 'student'" class="btn btn-primary btn-md" style="background-color: greenyellow; color: black;" (click)="onUpdate()">Click here to join!!!</button>
-                        <div *ngIf="role === 'coach'" class="dropdown">
+                        <div *ngIf="isDropdownVisible()" class="dropdown">
                             <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 Dropdown
                             </button>
                             <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                <button class="dropdown-item"  (click)="onUpdate()">EDIT COACH PROFILE</button>
-                                <button class="dropdown-item" >Option 2</button>
+                                <button class="dropdown-item" (click)="onUpdate()">EDIT COACH PROFILE</button>
+                                <button class="dropdown-item"   (click)="onView()">View the students that joined</button>
                             </div>
                         </div>
+                        
                     </div>
                 </div>
             </div>

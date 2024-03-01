@@ -67,6 +67,7 @@ export class AuthService {
     }
   }
 
+  
  
   renewToken(tokenApi : TokenApiModel){
     return this.http.post<any>(`${this.baseUrl}refresh`,tokenApi)
@@ -80,5 +81,8 @@ export class AuthService {
     return this.http.post<any>(`${this.baseUrl}update-coach-profile/${userId}`, updatedData);
   }
   
+  join(userId: number,userId2: number){
+    return this.http.post<any>(`${this.baseUrl}update-coach-profile/${userId}`, updatedData);
+  }
   
 }

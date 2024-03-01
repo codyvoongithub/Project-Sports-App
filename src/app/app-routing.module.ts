@@ -16,6 +16,7 @@ import { BadmintonComponent } from './component/badminton/badminton.component';
 import { VolleyballComponent } from './component/volleyball/volleyball.component';
 import { CoachProfileComponent } from './component/coach-profile/coach-profile.component';
 import { CoachFormComponent } from './component/coach-form/coach-form.component';
+import { StudentsJoinedComponent } from './students-joined/students-joined.component';
 
 //canActivate:[AuthGuard]
 
@@ -32,6 +33,7 @@ const routes: Routes = [
   {path:'volleyball',component:VolleyballComponent},
   {path:'coach-profile/:id',component:CoachProfileComponent},
   {path:'coach-form/:userId',component:CoachFormComponent},
+  {path:'students-joined/:userId',component:StudentsJoinedComponent}
   
 ];
 
