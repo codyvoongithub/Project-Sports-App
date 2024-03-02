@@ -44,3 +44,24 @@
         object-fit: cover;
         z-index: -1;
       }
+
+
+      .custom-table {
+        border-radius: 10px; /* Adding rounded corners */
+        color: black; /* Setting text color to black */
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Using a nice font */
+        background-color: white; /* Setting background color to white */
+    }
+    
+    .custom-table thead th,
+    .custom-table tbody td {
+        border-color: black; /* Setting border color */
+    }
+    
+ 
+    .custom-table .btn:hover:not(:disabled) {
+        opacity: 0.85; /* Reduce opacity on hover for better feedback */
+    }
+    
+    
+    

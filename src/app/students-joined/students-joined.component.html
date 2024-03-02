@@ -16,7 +16,38 @@
   </section>
   
   <section class="sec">
+    <h3>Students that joined</h3>
+    <div class="table-responsive">
+        <table class="table table-bordered table-hover custom-table">
+            <thead class="thead-dark">
+                <tr>
+                    <th scope="col">Student ID</th>
+                    <th scope="col">First Name</th>
+                    <th scope="col">Last Name</th>
+                    <th scope="col">Email/Contact Details</th>
+                    <th scope="col">Date of Joined</th>
+                    <th scope="col">Actions</th> <!-- New column for actions -->
+                </tr>
+            </thead>
+            <tbody>
+                <ng-container *ngFor="let user of users; let i = index">
+                    <tr>
+                        <td>{{ user.studentId }}</td>
+                        <td>{{ user.firstName }}</td>
+                        <td>{{ user.lastName }}</td>
+                        <td>{{ user.email }}</td>
+                        <td>{{ user.joinedDate | date:'medium' }}</td>
+                        <td>
+                            <button class="btn btn-danger btn-sm" (click)="removeStudent(user.studentId)">
+                                 Remove
+                            </button>
+                        </td>
+                    </tr>
+                </ng-container>
+            </tbody>
+        </table>
+    </div>
+</section>
 
 
 
-    </section>

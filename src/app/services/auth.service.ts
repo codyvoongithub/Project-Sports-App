@@ -77,12 +77,16 @@ export class AuthService {
     return this.http.delete<any>(`${this.baseUrl}delete/${userId}`);
   }
 
+  removeStudent(userId: number) {
+    return this.http.delete<any>(`${this.baseUrl}students-remove/${userId}`);
+  }
+
   update(userId: number, updatedData: any) {
     return this.http.post<any>(`${this.baseUrl}update-coach-profile/${userId}`, updatedData);
   }
   
-  join(userId: number,userId2: number){
-    return this.http.post<any>(`${this.baseUrl}update-coach-profile/${userId}`, updatedData);
+  join(userId: number, userId2: number) {
+    return this.http.post<any>(`${this.baseUrl}student-joining/${userId}`, { CoachID: userId, StudentId: userId2 });
   }
   
 }

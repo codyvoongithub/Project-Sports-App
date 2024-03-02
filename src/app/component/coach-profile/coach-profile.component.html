@@ -18,24 +18,24 @@
     <h3>Welcome!</h3>
     <div class="container">
         <div class="row">
-            <div class="col-md-4">
+            <div class="col-lg-4 col-sm-12">
                 <div class="achievement-container rounded">
                     <h2>Achievements</h2>
                     <div class="line"></div>
                     <p>{{ users.achievements }}</p>
                 </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-lg-4 col-sm-12">
                 <div class="description-container rounded">
                     <h2>Description</h2>
                     <div class="line"></div>
                     <p>{{ users.description }}</p>
                 </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-lg-4 col-sm-12">
                 <div class="button-container text-right">
                     <div id="buttonContainer">
-                        <button *ngIf="role === 'student'" class="btn btn-primary btn-md" style="background-color: greenyellow; color: black;" (click)="onUpdate()">Click here to join!!!</button>
+                        <button *ngIf="role === 'student'" class="btn btn-primary btn-md" style="background-color: greenyellow; color: black;" (click)="onJoin()">Click here to join!!!</button>
                         <div *ngIf="isDropdownVisible()" class="dropdown">
                             <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 Dropdown
@@ -51,14 +51,14 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-md-4">
+            <div class="col-lg-4 col-sm-12">
                 <div class="address-container rounded">
                     <h2>Address</h2>
                     <div class="line"></div>
                     <p>{{ users.address }}</p>
                 </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-lg-4 col-sm-12">
                 <div class="price-container rounded">
                     <h2>Price (USD per session)</h2>
                     <div class="line"></div>
