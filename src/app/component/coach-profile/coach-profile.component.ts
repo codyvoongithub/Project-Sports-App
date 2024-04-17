@@ -21,7 +21,6 @@ userId: any;
   ngOnInit() {
     
     const coachId = this.route.snapshot.paramMap.get('id');
-    console.log("COdy Coach profile",coachId);
     if (coachId !== null) {
       const userIdNumber = +coachId;
     this.api.getCoachProfile(userIdNumber)
@@ -79,23 +78,23 @@ isDropdownVisible(): boolean {
 
  onJoin() {
   const studentID = localStorage.getItem('userID');
-  const coachID = parseInt(this.getIdFromURL(), 10); // Parse the coach ID as an integer
+  const coachID = parseInt(this.getIdFromURL(), 10); 
   console.log("Coach ID :", coachID);
-  if (studentID && !isNaN(coachID)) { // Check if coachID is not NaN
+  if (studentID && !isNaN(coachID)) { 
     this.auth.join(coachID, +studentID).subscribe(
       response => {
-        // Handle successful join response
+      
         console.log(response);
-        alert('Success: ' + response.message); // Display success message
+        alert('Success: ' + response.message); 
       },
       error => {
-        // Handle join error
+       
         
-        alert('You have already joined this coach :P'); // Display error message
+        alert('You have already joined this coach :P'); 
       }
     );
   } else {
-    // Handle missing student ID or invalid coach ID
+   
     console.error('Student ID not found or invalid coach ID.');
     alert('Error: Student ID not found or invalid coach ID.');
   }

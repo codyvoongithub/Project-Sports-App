@@ -31,10 +31,10 @@ export class CoachFormComponent implements OnInit {
 
   ngOnInit() {
     this.updateForm = this.fb.group({
-      description: [' '], // Default description
-      achievements: [' '], // Default achievements
-        address: [' '], // Default address
-        price: [0] // Default price
+      description: [' '], 
+      achievements: [' '], 
+        address: [' '], 
+        price: [0] 
     });
    
 
@@ -63,7 +63,7 @@ export class CoachFormComponent implements OnInit {
           },
           error: (err) => {
             alert(err?.error?.message);
-            // Handle error as needed
+            
           }
         });
     }

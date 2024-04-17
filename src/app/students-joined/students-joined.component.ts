@@ -15,7 +15,7 @@ export class StudentsJoinedComponent implements OnInit{
   
   ngOnInit() {
       const coachId = this.route.snapshot.paramMap.get('userId');
-      console.log("COdy im here", coachId);
+      
       if (coachId !== null) {
         const userIdNumber = +coachId;
       this.api.getJoinedStudents(userIdNumber)

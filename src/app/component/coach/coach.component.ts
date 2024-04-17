@@ -51,7 +51,7 @@ export class CoachComponent implements OnInit {
 
   onJoin(userId: number) {
     console.log('Join button clicked for user with ID:', userId);
-    // Redirect to the coach profile component with the user's ID
+    
     this.router.navigate(['/coach-profile', userId]);
   }
 
